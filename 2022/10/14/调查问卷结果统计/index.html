@@ -1,534 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 6.0.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta name="description" content="来自crony的调查问卷1.您的性别  [单选题]    选项 小计 比例    男 6 50%   女 6 50%   本题有效填写人次 12    2.您的年龄段  [单选题]    选项 小计 比例    18岁以下 0 0%   18~25 11 91.67%   26~30 0 0%   30~40 0 0%   40以上 1 8.33%   本题有效填写人次 12    3.您平时出现">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>调查问卷结果统计 | croooony</title><meta name="keywords" content="project"><meta name="author" content="croooony"><meta name="copyright" content="croooony"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="来自crony的调查问卷1.您的性别  [单选题]    选项 小计 比例    男 6 50%   女 6 50%   本题有效填写人次 12    2.您的年龄段  [单选题]    选项 小计 比例    18岁以下 0 0%   18~25 11 91.67%   26~30 0 0%   30~40 0 0%   40以上 1 8.33%   本题有效填写人次 12    3.您平时出现">
 <meta property="og:type" content="article">
 <meta property="og:title" content="调查问卷结果统计">
 <meta property="og:url" content="http://example.com/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/index.html">
 <meta property="og:site_name" content="croooony">
 <meta property="og:description" content="来自crony的调查问卷1.您的性别  [单选题]    选项 小计 比例    男 6 50%   女 6 50%   本题有效填写人次 12    2.您的年龄段  [单选题]    选项 小计 比例    18岁以下 0 0%   18~25 11 91.67%   26~30 0 0%   30~40 0 0%   40以上 1 8.33%   本题有效填写人次 12    3.您平时出现">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image010.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image016.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image018.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image019.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image010.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image023.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image023.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image029.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image031.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image010.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image029.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image031.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image023.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image037.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image039.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image029.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image031.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image023.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image019.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image029.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image031.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image037.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image039.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image023.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image041.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image043.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image037.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image039.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image016.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image018.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image016.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image044.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image046.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image048.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image019.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image049.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image039.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image049.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image039.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image050.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image051.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image016.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image052.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image053.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image029.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image054.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image050.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image051.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image051.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image055.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image052.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image056.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image057.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image050.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image058.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image059.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image060.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image062.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image051.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image050.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image063.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image039.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image064.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image052.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image065.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image050.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image067.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image068.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image069.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image070.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image071.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image072.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image073.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image067.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image074.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image075.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image074.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image075.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image077.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image078.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image069.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image072.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image080.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image081.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image083.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image080.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image081.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image083.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image084.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image085.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image084.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image085.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image070.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image071.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image067.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image084.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image085.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image084.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image085.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image084.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image085.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image086.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image083.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image084.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image085.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image083.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image078.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image069.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image078.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image069.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image072.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image086.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image087.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image086.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image087.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image086.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image067.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image086.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image084.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image088.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image086.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image077.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image089.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image090.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image087.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image080.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image091.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image092.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image067.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image093.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image094.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image095.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image096.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image092.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image097.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image067.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image092.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image096.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image078.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image098.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image095.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image089.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image099.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image093.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image094.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image093.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image094.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image093.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image094.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image100.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image086.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image078.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image098.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image089.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image099.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image089.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image099.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image095.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image101.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image102.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image094.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image103.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image104.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image105.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image095.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image101.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image100.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image097.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image106.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image107.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image095.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image102.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image094.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image108.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image109.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image105.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image110.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image111.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image112.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image113.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image097.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image114.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image115.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image116.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image117.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image112.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image113.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image118.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image119.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image118.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image095.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image118.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image095.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image114.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image115.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image112.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image113.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image114.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image120.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image114.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image115.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image121.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image113.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image110.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image111.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image116.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image117.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image122.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image123.gif">
-<meta property="og:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image097.gif">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
 <meta property="article:published_time" content="2022-10-13T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-10-14T07:40:01.752Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2022-10-14T10:32:30.251Z">
+<meta property="article:author" content="croooony">
 <meta property="article:tag" content="project">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif">
-
-<link rel="canonical" href="http://example.com/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'en'
-  };
-</script>
-
-  <title>调查问卷结果统计 | croooony</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
+<meta name="twitter:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '调查问卷结果统计',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-10-14 18:32:30'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
   }
 
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-</head>
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">croooony</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content post posts-expand">
-            
-
-    
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="croooony">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          调查问卷结果统计
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-10-14 00:00:00 / Modified: 15:40:01" itemprop="dateCreated datePublished" datetime="2022-10-14T00:00:00+08:00">2022-10-14</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-        <h1 id="来自crony的调查问卷"><a href="#来自crony的调查问卷" class="headerlink" title="来自crony的调查问卷"></a><strong>来自crony的调查问卷</strong></h1><p>1.您的性别  [单选题]</p>
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">croooony</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">调查问卷结果统计</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-10-13T16:00:00.000Z" title="Created 2022-10-14 00:00:00">2022-10-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-10-14T10:32:30.251Z" title="Updated 2022-10-14 18:32:30">2022-10-14</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="调查问卷结果统计"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="来自crony的调查问卷"><a href="#来自crony的调查问卷" class="headerlink" title="来自crony的调查问卷"></a><strong>来自crony的调查问卷</strong></h1><p>1.您的性别  [单选题]</p>
 <table>
 <thead>
 <tr>
@@ -540,12 +154,12 @@
 <tbody><tr>
 <td>男</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif" alt="img">50%</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image004.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>女</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif" alt="img">50%</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image004.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -565,27 +179,27 @@
 <tbody><tr>
 <td>18岁以下</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif" alt="img">0%</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>18~25</td>
 <td>11</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image010.gif" alt="img">91.67%</td>
+<td><img src="/01/clip_image008.gif" alt="img"><img src="/01/clip_image010.gif" alt="img">91.67%</td>
 </tr>
 <tr>
 <td>26~30</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif" alt="img">0%</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>30~40</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif" alt="img">0%</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>40以上</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image014.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -605,37 +219,37 @@
 <tbody><tr>
 <td>学业&#x2F;工作问题</td>
 <td>9</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image016.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image018.gif" alt="img">75%</td>
+<td><img src="/01/clip_image016.gif" alt="img"><img src="/01/clip_image018.gif" alt="img">75%</td>
 </tr>
 <tr>
 <td>人际关系问题</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image019.gif" alt="img">50%</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image019.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>个人前途问题</td>
 <td>11</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image010.gif" alt="img">91.67%</td>
+<td><img src="/01/clip_image008.gif" alt="img"><img src="/01/clip_image010.gif" alt="img">91.67%</td>
 </tr>
 <tr>
 <td>恋爱问题</td>
 <td>7</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image023.gif" alt="img">58.33%</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image023.gif" alt="img">58.33%</td>
 </tr>
 <tr>
 <td>经济问题</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif" alt="img">25%</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>家庭问题</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif" alt="img">25%</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>其他</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif" alt="img">0%</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -655,47 +269,47 @@
 <tbody><tr>
 <td>向父母诉说</td>
 <td>7</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image023.gif" alt="img">58.33%</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image023.gif" alt="img">58.33%</td>
 </tr>
 <tr>
 <td>向亲人诉说</td>
 <td>4</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image029.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image031.gif" alt="img">33.33%</td>
+<td><img src="/01/clip_image029.gif" alt="img"><img src="/01/clip_image031.gif" alt="img">33.33%</td>
 </tr>
 <tr>
 <td>向知心朋友诉说</td>
 <td>11</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image010.gif" alt="img">91.67%</td>
+<td><img src="/01/clip_image008.gif" alt="img"><img src="/01/clip_image010.gif" alt="img">91.67%</td>
 </tr>
 <tr>
 <td>向同学&#x2F;同事诉说</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif" alt="img">25%</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>向男&#x2F;女朋友诉说</td>
 <td>4</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image029.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image031.gif" alt="img">33.33%</td>
+<td><img src="/01/clip_image029.gif" alt="img"><img src="/01/clip_image031.gif" alt="img">33.33%</td>
 </tr>
 <tr>
 <td>憋在心里</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>做一些运动发泄</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>其他</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif" alt="img">0%</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>不管</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image014.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -715,32 +329,32 @@
 <tbody><tr>
 <td>担心与同学&#x2F;同事相处不融洽</td>
 <td>7</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image023.gif" alt="img">58.33%</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image023.gif" alt="img">58.33%</td>
 </tr>
 <tr>
 <td>与他人的沟通交往存在障碍，缺乏技巧</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif" alt="img">50%</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image004.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>自己性格过于内向</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>朋友都太利益，不够纯洁</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image037.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image039.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image037.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>没有压力</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif" alt="img">25%</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>其他</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image014.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -760,22 +374,22 @@
 <tbody><tr>
 <td>很健康</td>
 <td>4</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image029.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image031.gif" alt="img">33.33%</td>
+<td><img src="/01/clip_image029.gif" alt="img"><img src="/01/clip_image031.gif" alt="img">33.33%</td>
 </tr>
 <tr>
 <td>比较健康</td>
 <td>7</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image023.gif" alt="img">58.33%</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image023.gif" alt="img">58.33%</td>
 </tr>
 <tr>
 <td>不健康</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif" alt="img">0%</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>其他</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image014.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -795,37 +409,37 @@
 <tbody><tr>
 <td>个体咨询</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image019.gif" alt="img">50%</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image019.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>团体心理辅导</td>
 <td>4</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image029.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image031.gif" alt="img">33.33%</td>
+<td><img src="/01/clip_image029.gif" alt="img"><img src="/01/clip_image031.gif" alt="img">33.33%</td>
 </tr>
 <tr>
 <td>心理健康教育讲座</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>网上心理咨询</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>没有获益</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image037.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image039.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image037.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>不需要心理辅导</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>其他</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif" alt="img">0%</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -845,37 +459,37 @@
 <tbody><tr>
 <td>个体咨询团体</td>
 <td>7</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image023.gif" alt="img">58.33%</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image023.gif" alt="img">58.33%</td>
 </tr>
 <tr>
 <td>心理辅导</td>
 <td>8</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image041.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image043.gif" alt="img">66.67%</td>
+<td><img src="/01/clip_image041.gif" alt="img"><img src="/01/clip_image043.gif" alt="img">66.67%</td>
 </tr>
 <tr>
 <td>心理健康教育讲座</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif" alt="img">25%</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>网上心理咨询</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>心理测试</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif" alt="img">25%</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>不需要加强</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image037.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image039.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image037.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>其他</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif" alt="img">0%</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -895,17 +509,17 @@
 <tbody><tr>
 <td>排斥，去医院会带来更大压力，可能会引起别人异样眼光</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>支持，去医院可以更有效的帮助心理问题的解决</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image014.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>中立，更喜欢线上问诊或者其他更保密的形式</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif" alt="img">50%</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image004.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -925,27 +539,27 @@
 <tbody><tr>
 <td>电话沟通</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>即时通讯软件(微信等)</td>
 <td>9</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image016.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image018.gif" alt="img">75%</td>
+<td><img src="/01/clip_image016.gif" alt="img"><img src="/01/clip_image018.gif" alt="img">75%</td>
 </tr>
 <tr>
 <td>医疗机构</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif" alt="img">25%</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>网络视频</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif" alt="img">25%</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>线下茶室、咖啡厅等</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -965,52 +579,52 @@
 <tbody><tr>
 <td>保密原则</td>
 <td>9</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image016.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image044.gif" alt="img">75%</td>
+<td><img src="/01/clip_image016.gif" alt="img"><img src="/01/clip_image044.gif" alt="img">75%</td>
 </tr>
 <tr>
 <td>就诊方便舒适</td>
 <td>10</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image046.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image048.gif" alt="img">83.33%</td>
+<td><img src="/01/clip_image046.gif" alt="img"><img src="/01/clip_image048.gif" alt="img">83.33%</td>
 </tr>
 <tr>
 <td>时长合适</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>解决现实问题</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image019.gif" alt="img">50%</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image019.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>效果好</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>起效快</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif" alt="img">25%</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>没有副反应</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image049.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image039.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image049.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>不会复发</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image049.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image039.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image049.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>性价比高</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image033.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>其他</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image050.gif" alt="img">0%</td>
+<td><img src="/01/clip_image050.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1030,32 +644,32 @@
 <tbody><tr>
 <td>微信、微博推送</td>
 <td>7</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image051.gif" alt="img">58.33%</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image051.gif" alt="img">58.33%</td>
 </tr>
 <tr>
 <td>抖音、小红书等短视频APP推送</td>
 <td>9</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image016.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image052.gif" alt="img">75%</td>
+<td><img src="/01/clip_image016.gif" alt="img"><img src="/01/clip_image052.gif" alt="img">75%</td>
 </tr>
 <tr>
 <td>专业人士普及</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image053.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image035.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image053.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>互联网搜索</td>
 <td>4</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image029.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image054.gif" alt="img">33.33%</td>
+<td><img src="/01/clip_image029.gif" alt="img"><img src="/01/clip_image054.gif" alt="img">33.33%</td>
 </tr>
 <tr>
 <td>亲朋好友告知</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif" alt="img">25%</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>其他</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image050.gif" alt="img">0%</td>
+<td><img src="/01/clip_image050.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1075,27 +689,27 @@
 <tbody><tr>
 <td>方便</td>
 <td>7</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image051.gif" alt="img">58.33%</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image051.gif" alt="img">58.33%</td>
 </tr>
 <tr>
 <td>节约时间</td>
 <td>7</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image051.gif" alt="img">58.33%</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image051.gif" alt="img">58.33%</td>
 </tr>
 <tr>
 <td>有效避免自我尴尬</td>
 <td>9</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image055.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image052.gif" alt="img">75%</td>
+<td><img src="/01/clip_image055.gif" alt="img"><img src="/01/clip_image052.gif" alt="img">75%</td>
 </tr>
 <tr>
 <td>费用低</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image056.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image057.gif" alt="img">50%</td>
+<td><img src="/01/clip_image056.gif" alt="img"><img src="/01/clip_image057.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>其他</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image050.gif" alt="img">0%</td>
+<td><img src="/01/clip_image050.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1115,27 +729,27 @@
 <tbody><tr>
 <td>技术不够成熟</td>
 <td>8</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image058.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image059.gif" alt="img">66.67%</td>
+<td><img src="/01/clip_image058.gif" alt="img"><img src="/01/clip_image059.gif" alt="img">66.67%</td>
 </tr>
 <tr>
 <td>作用效果不明显</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image025.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image060.gif" alt="img">25%</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image060.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>担心自身隐私泄露</td>
 <td>12</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image062.gif" alt="img">100%</td>
+<td><img src="/01/clip_image062.gif" alt="img">100%</td>
 </tr>
 <tr>
 <td>自身权益的维护</td>
 <td>7</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image051.gif" alt="img">58.33%</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image051.gif" alt="img">58.33%</td>
 </tr>
 <tr>
 <td>其他</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image050.gif" alt="img">0%</td>
+<td><img src="/01/clip_image050.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1155,22 +769,22 @@
 <tbody><tr>
 <td>不需要</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image063.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image039.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image063.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>无所谓</td>
 <td>9</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image064.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image052.gif" alt="img">75%</td>
+<td><img src="/01/clip_image064.gif" alt="img"><img src="/01/clip_image052.gif" alt="img">75%</td>
 </tr>
 <tr>
 <td>需要</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image065.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image065.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>特别需要</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image050.gif" alt="img">0%</td>
+<td><img src="/01/clip_image050.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1190,42 +804,42 @@
 <tbody><tr>
 <td>线下活动</td>
 <td>4</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image067.gif" alt="img">33.33%</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
 </tr>
 <tr>
 <td>趣味测试</td>
 <td>7</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image068.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image069.gif" alt="img">58.33%</td>
+<td><img src="/01/clip_image068.gif" alt="img"><img src="/01/clip_image069.gif" alt="img">58.33%</td>
 </tr>
 <tr>
 <td>专业测评</td>
 <td>8</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image070.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image071.gif" alt="img">66.67%</td>
+<td><img src="/01/clip_image070.gif" alt="img"><img src="/01/clip_image071.gif" alt="img">66.67%</td>
 </tr>
 <tr>
 <td>心理知识</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image072.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image073.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image072.gif" alt="img"><img src="/01/clip_image073.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>专业咨询</td>
 <td>4</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image067.gif" alt="img">33.33%</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
 </tr>
 <tr>
 <td>发泄窗口</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image074.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image075.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image074.gif" alt="img"><img src="/01/clip_image075.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>解压游戏</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image074.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image075.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image074.gif" alt="img"><img src="/01/clip_image075.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>其他</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image077.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image077.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1245,12 +859,12 @@
 <tbody><tr>
 <td>是</td>
 <td>7</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image078.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image069.gif" alt="img">58.33%</td>
+<td><img src="/01/clip_image078.gif" alt="img"><img src="/01/clip_image069.gif" alt="img">58.33%</td>
 </tr>
 <tr>
 <td>否</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image072.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image072.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1270,12 +884,12 @@
 <tbody><tr>
 <td>会</td>
 <td>9</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image080.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image081.gif" alt="img">75%</td>
+<td><img src="/01/clip_image080.gif" alt="img"><img src="/01/clip_image081.gif" alt="img">75%</td>
 </tr>
 <tr>
 <td>不会</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image083.gif" alt="img">25%</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image083.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1295,12 +909,12 @@
 <tbody><tr>
 <td>会</td>
 <td>9</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image080.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image081.gif" alt="img">75%</td>
+<td><img src="/01/clip_image080.gif" alt="img"><img src="/01/clip_image081.gif" alt="img">75%</td>
 </tr>
 <tr>
 <td>不会</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image083.gif" alt="img">25%</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image083.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1320,12 +934,12 @@
 <tbody><tr>
 <td>会</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image084.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image085.gif" alt="img">50%</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>不会</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image084.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image085.gif" alt="img">50%</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1345,12 +959,12 @@
 <tbody><tr>
 <td>会</td>
 <td>8</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image070.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image071.gif" alt="img">66.67%</td>
+<td><img src="/01/clip_image070.gif" alt="img"><img src="/01/clip_image071.gif" alt="img">66.67%</td>
 </tr>
 <tr>
 <td>不会</td>
 <td>4</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image067.gif" alt="img">33.33%</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1370,37 +984,37 @@
 <tbody><tr>
 <td>实时心理测试与评价</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image084.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image085.gif" alt="img">50%</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>走进聊天室，热门话题抢先知</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image084.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image085.gif" alt="img">50%</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>秘密树洞，匿名社区，畅所欲言</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image084.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image085.gif" alt="img">50%</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>专家老师</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image086.gif" alt="img">25%</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>1对1心理咨询</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image083.gif" alt="img">25%</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image083.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>情绪日记DIY</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image084.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image085.gif" alt="img">50%</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>美文音频个性化推荐服务</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image083.gif" alt="img">25%</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image083.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1420,27 +1034,27 @@
 <tbody><tr>
 <td>欢快活泼可爱—小公举风</td>
 <td>7</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image078.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image069.gif" alt="img">58.33%</td>
+<td><img src="/01/clip_image078.gif" alt="img"><img src="/01/clip_image069.gif" alt="img">58.33%</td>
 </tr>
 <tr>
 <td>简约干净—性冷淡风</td>
 <td>7</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image078.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image069.gif" alt="img">58.33%</td>
+<td><img src="/01/clip_image078.gif" alt="img"><img src="/01/clip_image069.gif" alt="img">58.33%</td>
 </tr>
 <tr>
 <td>时尚热情绚丽—时尚大片风</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image072.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image072.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>具有冲击力个性鲜明—艺术潮流风</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image086.gif" alt="img">25%</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>其他</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image087.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image087.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1460,52 +1074,52 @@
 <tbody><tr>
 <td>线上心理咨询师</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image086.gif" alt="img">25%</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>倾诉</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image087.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image087.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>心理测试</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image086.gif" alt="img">25%</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>沟通小组</td>
 <td>4</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image067.gif" alt="img">33.33%</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
 </tr>
 <tr>
 <td>专业课程</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image086.gif" alt="img">25%</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>课程直播</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image084.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image088.gif" alt="img">50%</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image088.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>科普文章</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image086.gif" alt="img">25%</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>心理FM</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image077.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image077.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>监视打卡</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image089.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image090.gif" alt="img">50%</td>
+<td><img src="/01/clip_image089.gif" alt="img"><img src="/01/clip_image090.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>其他</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image087.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image087.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1525,27 +1139,27 @@
 <tbody><tr>
 <td>没有用过，不知道</td>
 <td>9</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image080.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image091.gif" alt="img">75%</td>
+<td><img src="/01/clip_image080.gif" alt="img"><img src="/01/clip_image091.gif" alt="img">75%</td>
 </tr>
 <tr>
 <td>不想花钱，觉得自己可以解决</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image092.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image092.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>不敢在陌生人面前说心里话</td>
 <td>4</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image067.gif" alt="img">33.33%</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
 </tr>
 <tr>
 <td>觉得事情不是很严重</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image093.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image094.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image093.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>觉得心很累，不想理会，不想解决问题</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image095.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1565,27 +1179,27 @@
 <tbody><tr>
 <td>QQ登录</td>
 <td>4</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image096.gif" alt="img">33.33%</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image096.gif" alt="img">33.33%</td>
 </tr>
 <tr>
 <td>微信登录</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image092.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image092.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>微博登录</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image097.gif" alt="img">0%</td>
+<td><img src="/01/clip_image097.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>手机号登录</td>
 <td>4</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image067.gif" alt="img">33.33%</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
 </tr>
 <tr>
 <td>不登录或者匿名登录</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image092.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image092.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1605,17 +1219,17 @@
 <tbody><tr>
 <td>不想拥有</td>
 <td>4</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image066.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image096.gif" alt="img">33.33%</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image096.gif" alt="img">33.33%</td>
 </tr>
 <tr>
 <td>比较想拥有</td>
 <td>7</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image078.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image098.gif" alt="img">58.33%</td>
+<td><img src="/01/clip_image078.gif" alt="img"><img src="/01/clip_image098.gif" alt="img">58.33%</td>
 </tr>
 <tr>
 <td>很想拥有</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image095.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1635,22 +1249,22 @@
 <tbody><tr>
 <td>很新颖，愿意一试</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image089.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image099.gif" alt="img">50%</td>
+<td><img src="/01/clip_image089.gif" alt="img"><img src="/01/clip_image099.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>看情况，</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image093.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image094.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image093.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>了解是什么问题</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image093.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image094.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image093.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>网上留言就行，手写信就算了</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image093.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image094.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image093.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1670,37 +1284,37 @@
 <tbody><tr>
 <td>对时事新闻从心理学角度进行点评</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image100.gif" alt="img">25%</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image100.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>听觉类心理资讯或知识播报</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image086.gif" alt="img">25%</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>图文并茂的心理资讯或知识呈现</td>
 <td>7</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image078.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image098.gif" alt="img">58.33%</td>
+<td><img src="/01/clip_image078.gif" alt="img"><img src="/01/clip_image098.gif" alt="img">58.33%</td>
 </tr>
 <tr>
 <td>很温馨的让我感觉温暖的内容</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image089.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image099.gif" alt="img">50%</td>
+<td><img src="/01/clip_image089.gif" alt="img"><img src="/01/clip_image099.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>很新奇的能引起我的兴趣的内容</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image089.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image099.gif" alt="img">50%</td>
+<td><img src="/01/clip_image089.gif" alt="img"><img src="/01/clip_image099.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>放松类技巧示范</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image095.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>其它</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image101.gif" alt="img">0%</td>
+<td><img src="/01/clip_image101.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1720,27 +1334,27 @@
 <tbody><tr>
 <td>每天更新3次以上</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image102.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image094.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image102.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>一天更新1-2次</td>
 <td>4</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image103.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image104.gif" alt="img">33.33%</td>
+<td><img src="/01/clip_image103.gif" alt="img"><img src="/01/clip_image104.gif" alt="img">33.33%</td>
 </tr>
 <tr>
 <td>两三天更新一次</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image105.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image105.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>一周更新一次</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image095.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>其它</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image101.gif" alt="img">0%</td>
+<td><img src="/01/clip_image101.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1760,27 +1374,27 @@
 <tbody><tr>
 <td>非常不期待</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image082.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image100.gif" alt="img">25%</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image100.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>不期待</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image097.gif" alt="img">0%</td>
+<td><img src="/01/clip_image097.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>一般</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image106.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image107.gif" alt="img">50%</td>
+<td><img src="/01/clip_image106.gif" alt="img"><img src="/01/clip_image107.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>期待</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image076.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image095.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>非常期待</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image102.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image094.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image102.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1800,27 +1414,27 @@
 <tbody><tr>
 <td>搞笑类</td>
 <td>8</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image108.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image109.gif" alt="img">66.67%</td>
+<td><img src="/01/clip_image108.gif" alt="img"><img src="/01/clip_image109.gif" alt="img">66.67%</td>
 </tr>
 <tr>
 <td>励志类</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image105.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image105.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>萌宠类</td>
 <td>9</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image110.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image111.gif" alt="img">75%</td>
+<td><img src="/01/clip_image110.gif" alt="img"><img src="/01/clip_image111.gif" alt="img">75%</td>
 </tr>
 <tr>
 <td>音乐情感类</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image112.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image113.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image112.gif" alt="img"><img src="/01/clip_image113.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>其他</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image097.gif" alt="img">0%</td>
+<td><img src="/01/clip_image097.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1840,27 +1454,27 @@
 <tbody><tr>
 <td>非常不期待</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image114.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image115.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image114.gif" alt="img"><img src="/01/clip_image115.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>不期待</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image116.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image117.gif" alt="img">25%</td>
+<td><img src="/01/clip_image116.gif" alt="img"><img src="/01/clip_image117.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>一般</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image112.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image113.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image112.gif" alt="img"><img src="/01/clip_image113.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>期待</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image118.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image119.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image118.gif" alt="img"><img src="/01/clip_image119.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>非常期待</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image118.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image095.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image118.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1880,27 +1494,27 @@
 <tbody><tr>
 <td>非常不期待</td>
 <td>1</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image118.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image095.gif" alt="img">8.33%</td>
+<td><img src="/01/clip_image118.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
 </tr>
 <tr>
 <td>不期待</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image114.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image115.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image114.gif" alt="img"><img src="/01/clip_image115.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>一般</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image112.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image113.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image112.gif" alt="img"><img src="/01/clip_image113.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>期待</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image114.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image120.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image114.gif" alt="img"><img src="/01/clip_image120.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>非常期待</td>
 <td>2</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image114.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image115.gif" alt="img">16.67%</td>
+<td><img src="/01/clip_image114.gif" alt="img"><img src="/01/clip_image115.gif" alt="img">16.67%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1920,27 +1534,27 @@
 <tbody><tr>
 <td>真人真事类</td>
 <td>5</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image121.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image113.gif" alt="img">41.67%</td>
+<td><img src="/01/clip_image121.gif" alt="img"><img src="/01/clip_image113.gif" alt="img">41.67%</td>
 </tr>
 <tr>
 <td>著名心理读物类</td>
 <td>9</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image110.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image111.gif" alt="img">75%</td>
+<td><img src="/01/clip_image110.gif" alt="img"><img src="/01/clip_image111.gif" alt="img">75%</td>
 </tr>
 <tr>
 <td>励志文学类</td>
 <td>3</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image116.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image117.gif" alt="img">25%</td>
+<td><img src="/01/clip_image116.gif" alt="img"><img src="/01/clip_image117.gif" alt="img">25%</td>
 </tr>
 <tr>
 <td>温暖治愈类</td>
 <td>6</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image122.gif" alt="img"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image123.gif" alt="img">50%</td>
+<td><img src="/01/clip_image122.gif" alt="img"><img src="/01/clip_image123.gif" alt="img">50%</td>
 </tr>
 <tr>
 <td>其他</td>
 <td>0</td>
-<td><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image097.gif" alt="img">0%</td>
+<td><img src="/01/clip_image097.gif" alt="img">0%</td>
 </tr>
 <tr>
 <td>本题有效填写人次</td>
@@ -1948,191 +1562,4 @@
 <td></td>
 </tr>
 </tbody></table>
-
-    </div>
-
-    
-    
-    
-
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/project/" rel="tag"># project</a>
-          </div>
-
-        
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2022/10/13/%E8%AE%BF%E8%B0%88%E8%AE%B0%E5%BD%95/" rel="prev" title="访谈记录">
-      <i class="fa fa-chevron-left"></i> 访谈记录
-    </a></div>
-      <div class="post-nav-item"></div>
-    </div>
-      </footer>
-    
-  </article>
-  
-  
-  
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9D%A5%E8%87%AAcrony%E7%9A%84%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7"><span class="nav-number">1.</span> <span class="nav-text">来自crony的调查问卷</span></a></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">6</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">tags</span>
-      </div>
-  </nav>
-</div>
-
-
-
-      </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2022</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
-</div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
-  </div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-</body>
-</html>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">croooony</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/">http://example.com/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/project/">project</a></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/10/13/%E8%AE%BF%E8%B0%88%E8%AE%B0%E5%BD%95/"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">访谈记录</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2022/10/11/%E5%9B%A2%E9%98%9F/" title="团队"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-11</div><div class="title">团队</div></div></a></div><div><a href="/2022/10/10/%E6%80%9D%E8%80%83%E6%94%AF%E6%8C%81%E4%B8%AA%E4%BA%BA%E5%8C%BB%E7%96%97%E4%BF%9D%E5%81%A5%E7%9A%84%E6%96%B9%E6%B3%95/" title="思考支持个人医疗保健的方法"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-10</div><div class="title">思考支持个人医疗保健的方法</div></div></a></div><div><a href="/2022/10/12/%E6%8A%A5%E5%91%8A/" title="报告"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-12</div><div class="title">报告</div></div></a></div><div><a href="/2022/10/13/%E8%AE%BF%E8%B0%88%E8%AE%B0%E5%BD%95/" title="访谈记录"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-13</div><div class="title">访谈记录</div></div></a></div><div><a href="/2022/10/09/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E8%AF%A6%E7%BB%86%E7%BB%93%E6%9E%9C/" title="调查问卷详细结果"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-09</div><div class="title">调查问卷详细结果</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">croooony</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9D%A5%E8%87%AAcrony%E7%9A%84%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7"><span class="toc-number">1.</span> <span class="toc-text">来自crony的调查问卷</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/" title="调查问卷结果统计"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="调查问卷结果统计"/></a><div class="content"><a class="title" href="/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/" title="调查问卷结果统计">调查问卷结果统计</a><time datetime="2022-10-13T16:00:00.000Z" title="Created 2022-10-14 00:00:00">2022-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/13/%E8%AE%BF%E8%B0%88%E8%AE%B0%E5%BD%95/" title="访谈记录"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="访谈记录"/></a><div class="content"><a class="title" href="/2022/10/13/%E8%AE%BF%E8%B0%88%E8%AE%B0%E5%BD%95/" title="访谈记录">访谈记录</a><time datetime="2022-10-12T16:00:00.000Z" title="Created 2022-10-13 00:00:00">2022-10-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/12/%E6%8A%A5%E5%91%8A/" title="报告"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="报告"/></a><div class="content"><a class="title" href="/2022/10/12/%E6%8A%A5%E5%91%8A/" title="报告">报告</a><time datetime="2022-10-11T16:00:00.000Z" title="Created 2022-10-12 00:00:00">2022-10-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/11/%E5%9B%A2%E9%98%9F/" title="团队"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="团队"/></a><div class="content"><a class="title" href="/2022/10/11/%E5%9B%A2%E9%98%9F/" title="团队">团队</a><time datetime="2022-10-10T16:00:00.000Z" title="Created 2022-10-11 00:00:00">2022-10-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/10/%E6%80%9D%E8%80%83%E6%94%AF%E6%8C%81%E4%B8%AA%E4%BA%BA%E5%8C%BB%E7%96%97%E4%BF%9D%E5%81%A5%E7%9A%84%E6%96%B9%E6%B3%95/" title="思考支持个人医疗保健的方法"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="思考支持个人医疗保健的方法"/></a><div class="content"><a class="title" href="/2022/10/10/%E6%80%9D%E8%80%83%E6%94%AF%E6%8C%81%E4%B8%AA%E4%BA%BA%E5%8C%BB%E7%96%97%E4%BF%9D%E5%81%A5%E7%9A%84%E6%96%B9%E6%B3%95/" title="思考支持个人医疗保健的方法">思考支持个人医疗保健的方法</a><time datetime="2022-10-09T16:00:00.000Z" title="Created 2022-10-10 00:00:00">2022-10-10</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By croooony</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
