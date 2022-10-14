@@ -1,419 +1,3167 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>croooony</title><meta name="author" content="croooony"><meta name="copyright" content="croooony"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
 <meta property="og:title" content="croooony">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="croooony">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:author" content="croooony">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
-  root: '/',
-  algolia: undefined,
-  localSearch: undefined,
-  translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
-  copy: {
-    success: 'Copy successfully',
-    error: 'Copy error',
-    noSupport: 'The browser does not support'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '',
-  date_suffix: {
-    just: 'Just',
-    min: 'minutes ago',
-    hour: 'hours ago',
-    day: 'days ago',
-    month: 'months ago'
-  },
-  copyright: undefined,
-  lightbox: 'fancybox',
-  Snackbar: undefined,
-  source: {
-    justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
-    }
-  },
-  isPhotoFigcaption: false,
-  islazyload: false,
-  isAnchor: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: 'croooony',
-  isPost: false,
-  isHome: true,
-  isHighlightShrink: false,
-  isToc: false,
-  postUpdate: '2022-10-14 18:36:41'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
 
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(win=>{
-    win.saveToLocal = {
-      set: function setWithExpiry(key, value, ttl) {
-        if (ttl === 0) return
-        const now = new Date()
-        const expiryDay = ttl * 86400000
-        const item = {
-          value: value,
-          expiry: now.getTime() + expiryDay,
-        }
-        localStorage.setItem(key, JSON.stringify(item))
-      },
+<link rel="canonical" href="http://example.com/">
 
-      get: function getWithExpiry(key) {
-        const itemStr = localStorage.getItem(key)
 
-        if (!itemStr) {
-          return undefined
-        }
-        const item = JSON.parse(itemStr)
-        const now = new Date()
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
 
-        if (now.getTime() > item.expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return item.value
-      }
-    }
+  <title>croooony</title>
   
-    win.getScript = url => new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.src = url
-      script.async = true
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    })
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">croooony</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
   
-      win.activateDarkMode = function () {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = function () {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="croooony">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="croooony">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/" class="post-title-link" itemprop="url">调查问卷结果统计</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-10-14 00:00:00 / Modified: 18:32:30" itemprop="dateCreated datePublished" datetime="2022-10-14T00:00:00+08:00">2022-10-14</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
     
-          if (t === 'dark') activateDarkMode()
-          else if (t === 'light') activateLightMode()
-        
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
     
-    const detectApple = () => {
-      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-        document.documentElement.classList.add('apple')
-      }
-    }
-    detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">croooony</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">croooony</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/" title="调查问卷结果统计"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="调查问卷结果统计"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/" title="调查问卷结果统计">调查问卷结果统计</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-13T16:00:00.000Z" title="Created 2022-10-14 00:00:00">2022-10-14</time></span></div><div class="content">来自crony的调查问卷1.您的性别  [单选题]
-
-
-
-选项
-小计
-比例
-
-
-
-男
-6
-50%
-
-
-女
-6
-50%
-
-
-本题有效填写人次
-12
-
-
-
-2.您的年龄段  [单选题]
-
-
-
-选项
-小计
-比例
-
-
-
-18岁以下
-0
-0%
-
-
-18~25
-11
-91.67%
-
-
-26~30
-0
-0%
-
-
-30~40
-0
-0%
-
-
-40以上
-1
-8.33%
-
-
-本题有效填写人次
-12
-
-
-
-3.您平时出现焦虑的原因有哪些？  [多选题]
-
-
-
-选项
-小计
-比例
-
-
-
-学业&#x2F;工作问题
-9
-75%
-
-
-人际关系问题
-6
-50%
-
-
-个人前途问题
-11
-91.67%
-
-
-恋爱问题
-7
-58.33%
-
-
-经济问题
-3
-25%
-
-
-家庭问题
-3
-25%
-
-
-其他
-0
-0%
-
-
-本题有效填写人次
-12
-
-
-
-4.你如何发泄自己的负面情绪，遇到困扰你一般会向谁请教？  [多选题]
-
-
-
-选项
-小计
-比例
-
-
-
-向父母诉说
-7
-58.33%
-
-
-向亲人诉说
-4
-33.33%
-
-
-向知心朋友诉说
-11
-91.67%
-
-
-向同学&#x2F;同事诉说
-3
-25%
-
-
-向男&#x2F;女朋友诉说
-4
-33. ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/10/13/%E8%AE%BF%E8%B0%88%E8%AE%B0%E5%BD%95/" title="访谈记录"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="访谈记录"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/10/13/%E8%AE%BF%E8%B0%88%E8%AE%B0%E5%BD%95/" title="访谈记录">访谈记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-12T16:00:00.000Z" title="Created 2022-10-13 00:00:00">2022-10-13</time></span></div><div class="content">访谈记录一：
-时间：2022.10.12  地点：学校  采访对象：徐先生  采访者：赵怡然
-感谢您能百忙之间参与我们关于心理健康服务的采访，可能在采访过程中会问到一些隐私性的问题，如果这让您感觉到了不适，那我们可以直接跳过这个问题。在采访之前，您有什么问题想要问我吗？
-答：没有。
-主题一：是否会对心理问题感到困扰
-
-当您心情不好的时候，您通常会选择什么样的方式缓解？
-答：唱歌。
-
-您通常会在什么情况下选择向他人倾诉烦恼？
-
-
-​    答：不开心的时候。
-
-您对心理咨询的了解程度？
-
-​    答：不了解，心理状况挺好的。
-
-您身边是否有被心理问题困扰的人？
-
-​    答：有。
-
-您是通过什么途径寻求心理服务？
-
-​    答：跟朋友打电话。
-主题二：对心理服务app的看法
-
-如果有一天您需要心理咨询服务，那么可能会是什么原因呢？
-
-​    答：我不需要，我心理还是很健康的。
-
-您最倾向的咨询方式是什么呢？（比如面对面咨询、视频咨询、语音咨询、文字咨询）
-
-​    答：语音咨询，给朋友打电话倾诉，朋友来开导我。
-
-您能否接受使用手机APP进行心理咨询服务
-
-​    答：愿意。 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/10/12/%E6%8A%A5%E5%91%8A/" title="报告"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="报告"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/10/12/%E6%8A%A5%E5%91%8A/" title="报告">报告</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-11T16:00:00.000Z" title="Created 2022-10-12 00:00:00">2022-10-12</time></span></div><div class="content">
-
-
-Team Name
-croooony
-
-
-
-
-
-
-Members
-何宇川
-李睿
-赵怡然
-乔婧
-
-
-项目介绍：
-现代人在生活中面临着巨大压力，高房价、低生育率、996工作制等社会现实，而拖延症、自我轻视、容貌焦虑、失业恐惧、消极情绪、过高期待等常见心理也让本不平坦的生活雪上加霜。在一系列压力的叠加之下，年轻人失去了本该有的锐气和朝气，变得暮气沉沉。一些人因为一件小事而瞬间崩溃，一些人工作 996，生病 ICU，焦虑及抑郁情绪常有，想要与朋友交流发泄情绪时会面临或缺少空闲时间、或没有能交心的朋友，想寻求专业的帮助却又难保不会落入伪科学的圈套。一方面国人对情绪心理问题缺乏正确的认知、逃避甚至有抗拒心理；另一方面国内目前心理体系的鱼龙混杂，缺乏合适的机构、缺乏专业的人士。而作为出现情绪、心理问题人们的身边，家人、朋友，无法及时发现并提供有效的帮助，也是一大重要问题。针对上述存在的问题，我们希望提供一个解决方案，能够让人们正确认识情绪心理问题，能够让社会、人们及时发现存在的心理问题，一起解决问题；能够帮助人们调整情绪，宣泄情绪，让社会焕发生命力。
-一、采访脚本感谢您能百忙之间参与我们关于心 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/10/11/%E5%9B%A2%E9%98%9F/" title="团队"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="团队"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/10/11/%E5%9B%A2%E9%98%9F/" title="团队">团队</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-10T16:00:00.000Z" title="Created 2022-10-11 00:00:00">2022-10-11</time></span></div><div class="content">
-   
-      Team Name
-      croooony
-   
-   
-      Members
-      何宇川
-      李睿
-      赵怡然
-      乔婧
-   
-   
-      Preferred contact info(QQ)
-      1530087345
-      979112508
-      453728079
-      1656754834
-   
-   
-      Skills Inventory
-      编程设计
-      绘画设计
-      功能发掘
-      文案书写
-   
-   
-      Communication Plan
-      ·定期在QQ群中集会，对项目进行分析讨论，对项目整体进度和方向进行把控；
-          ·发现问题，和对应的任务负责人进行沟通，以期对项目进行提高和改进。
-   
-   
-      Rules
-      ·每个人可以对项目工作提出批评、建议和监督；
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="来自crony的调查问卷"><a href="#来自crony的调查问卷" class="headerlink" title="来自crony的调查问卷"></a><strong>来自crony的调查问卷</strong></h1><p>1.您的性别  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>男</td>
+<td>6</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image004.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>女</td>
+<td>6</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image004.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>2.您的年龄段  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>18岁以下</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>18~25</td>
+<td>11</td>
+<td><img src="/01/clip_image008.gif" alt="img"><img src="/01/clip_image010.gif" alt="img">91.67%</td>
+</tr>
+<tr>
+<td>26~30</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>30~40</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>40以上</td>
+<td>1</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image014.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>3.您平时出现焦虑的原因有哪些？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>学业&#x2F;工作问题</td>
+<td>9</td>
+<td><img src="/01/clip_image016.gif" alt="img"><img src="/01/clip_image018.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>人际关系问题</td>
+<td>6</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image019.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>个人前途问题</td>
+<td>11</td>
+<td><img src="/01/clip_image008.gif" alt="img"><img src="/01/clip_image010.gif" alt="img">91.67%</td>
+</tr>
+<tr>
+<td>恋爱问题</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image023.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>经济问题</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>家庭问题</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>4.你如何发泄自己的负面情绪，遇到困扰你一般会向谁请教？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>向父母诉说</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image023.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>向亲人诉说</td>
+<td>4</td>
+<td><img src="/01/clip_image029.gif" alt="img"><img src="/01/clip_image031.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>向知心朋友诉说</td>
+<td>11</td>
+<td><img src="/01/clip_image008.gif" alt="img"><img src="/01/clip_image010.gif" alt="img">91.67%</td>
+</tr>
+<tr>
+<td>向同学&#x2F;同事诉说</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>向男&#x2F;女朋友诉说</td>
+<td>4</td>
+<td><img src="/01/clip_image029.gif" alt="img"><img src="/01/clip_image031.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>憋在心里</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>做一些运动发泄</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>不管</td>
+<td>1</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image014.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>5.若你在人际交往方面存在压力，你认为是什么原因造成的呢？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>担心与同学&#x2F;同事相处不融洽</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image023.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>与他人的沟通交往存在障碍，缺乏技巧</td>
+<td>6</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image004.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>自己性格过于内向</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>朋友都太利益，不够纯洁</td>
+<td>2</td>
+<td><img src="/01/clip_image037.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>没有压力</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>1</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image014.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>6.您认为现在自己的心理状况如何?  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>很健康</td>
+<td>4</td>
+<td><img src="/01/clip_image029.gif" alt="img"><img src="/01/clip_image031.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>比较健康</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image023.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>不健康</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>1</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image014.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>7.你认为可以从下列哪些资源中获得心理方面的帮助？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>个体咨询</td>
+<td>6</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image019.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>团体心理辅导</td>
+<td>4</td>
+<td><img src="/01/clip_image029.gif" alt="img"><img src="/01/clip_image031.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>心理健康教育讲座</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>网上心理咨询</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>没有获益</td>
+<td>2</td>
+<td><img src="/01/clip_image037.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>不需要心理辅导</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>8.在心理健康教育和咨询工作方面，您认为需要加强的是？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>个体咨询团体</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image023.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>心理辅导</td>
+<td>8</td>
+<td><img src="/01/clip_image041.gif" alt="img"><img src="/01/clip_image043.gif" alt="img">66.67%</td>
+</tr>
+<tr>
+<td>心理健康教育讲座</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>网上心理咨询</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>心理测试</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>不需要加强</td>
+<td>2</td>
+<td><img src="/01/clip_image037.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>9.您对去医院进行心理疏导或者心理治疗持一种怎样的态度？  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>排斥，去医院会带来更大压力，可能会引起别人异样眼光</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>支持，去医院可以更有效的帮助心理问题的解决</td>
+<td>1</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image014.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>中立，更喜欢线上问诊或者其他更保密的形式</td>
+<td>6</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image004.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>10.您更愿意选择哪种心理咨询的形式？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>电话沟通</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>即时通讯软件(微信等)</td>
+<td>9</td>
+<td><img src="/01/clip_image016.gif" alt="img"><img src="/01/clip_image018.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>医疗机构</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>网络视频</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>线下茶室、咖啡厅等</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>11.关于心理咨询、治疗您认为重要的是？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>保密原则</td>
+<td>9</td>
+<td><img src="/01/clip_image016.gif" alt="img"><img src="/01/clip_image044.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>就诊方便舒适</td>
+<td>10</td>
+<td><img src="/01/clip_image046.gif" alt="img"><img src="/01/clip_image048.gif" alt="img">83.33%</td>
+</tr>
+<tr>
+<td>时长合适</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>解决现实问题</td>
+<td>6</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image019.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>效果好</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>起效快</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>没有副反应</td>
+<td>2</td>
+<td><img src="/01/clip_image049.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>不会复发</td>
+<td>2</td>
+<td><img src="/01/clip_image049.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>性价比高</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image050.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>12.心理咨询、治疗相关知识和信息的获取途径：  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>微信、微博推送</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image051.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>抖音、小红书等短视频APP推送</td>
+<td>9</td>
+<td><img src="/01/clip_image016.gif" alt="img"><img src="/01/clip_image052.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>专业人士普及</td>
+<td>5</td>
+<td><img src="/01/clip_image053.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>互联网搜索</td>
+<td>4</td>
+<td><img src="/01/clip_image029.gif" alt="img"><img src="/01/clip_image054.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>亲朋好友告知</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image050.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>13.与传统线下心理咨询相比，您认为线上心理咨询有哪些优势？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>方便</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image051.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>节约时间</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image051.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>有效避免自我尴尬</td>
+<td>9</td>
+<td><img src="/01/clip_image055.gif" alt="img"><img src="/01/clip_image052.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>费用低</td>
+<td>6</td>
+<td><img src="/01/clip_image056.gif" alt="img"><img src="/01/clip_image057.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image050.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>14.与传统线下心理咨询相比，您认为线上心理咨询存在哪些劣势？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>技术不够成熟</td>
+<td>8</td>
+<td><img src="/01/clip_image058.gif" alt="img"><img src="/01/clip_image059.gif" alt="img">66.67%</td>
+</tr>
+<tr>
+<td>作用效果不明显</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image060.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>担心自身隐私泄露</td>
+<td>12</td>
+<td><img src="/01/clip_image062.gif" alt="img">100%</td>
+</tr>
+<tr>
+<td>自身权益的维护</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image051.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image050.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>15.您是否希望有一个心理健康类app能够帮助你调节情绪  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>不需要</td>
+<td>2</td>
+<td><img src="/01/clip_image063.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>无所谓</td>
+<td>9</td>
+<td><img src="/01/clip_image064.gif" alt="img"><img src="/01/clip_image052.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>需要</td>
+<td>1</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image065.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>特别需要</td>
+<td>0</td>
+<td><img src="/01/clip_image050.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>16.您对心理类APP 哪些内容比较感兴趣？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>线下活动</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>趣味测试</td>
+<td>7</td>
+<td><img src="/01/clip_image068.gif" alt="img"><img src="/01/clip_image069.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>专业测评</td>
+<td>8</td>
+<td><img src="/01/clip_image070.gif" alt="img"><img src="/01/clip_image071.gif" alt="img">66.67%</td>
+</tr>
+<tr>
+<td>心理知识</td>
+<td>5</td>
+<td><img src="/01/clip_image072.gif" alt="img"><img src="/01/clip_image073.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>专业咨询</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>发泄窗口</td>
+<td>2</td>
+<td><img src="/01/clip_image074.gif" alt="img"><img src="/01/clip_image075.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>解压游戏</td>
+<td>2</td>
+<td><img src="/01/clip_image074.gif" alt="img"><img src="/01/clip_image075.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image077.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>17.您是否想了解自己一阶段的情绪波动情况  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>是</td>
+<td>7</td>
+<td><img src="/01/clip_image078.gif" alt="img"><img src="/01/clip_image069.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>否</td>
+<td>5</td>
+<td><img src="/01/clip_image072.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>18.如果在你心情不开心时&#x2F;波动时，有一个地方可以让你和陌生人或者线上好友聊天抒发，你会去使用吗  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>会</td>
+<td>9</td>
+<td><img src="/01/clip_image080.gif" alt="img"><img src="/01/clip_image081.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>不会</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image083.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>19.假如有一个社区平台可以让你匿名发帖并且给他人的帖子评论留言，你会不会加入这个社区  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>会</td>
+<td>9</td>
+<td><img src="/01/clip_image080.gif" alt="img"><img src="/01/clip_image081.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>不会</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image083.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>20.在你心情糟糕的时候，你会选择寻求心理咨询的帮助吗  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>会</td>
+<td>6</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>不会</td>
+<td>6</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>21.假如有一个app可以将你每天的情绪用日记的形式记录下来，你会去使用吗  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>会</td>
+<td>8</td>
+<td><img src="/01/clip_image070.gif" alt="img"><img src="/01/clip_image071.gif" alt="img">66.67%</td>
+</tr>
+<tr>
+<td>不会</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>22.如果有一款心理类app有以下功能，您对哪些功能最感兴趣  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>实时心理测试与评价</td>
+<td>6</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>走进聊天室，热门话题抢先知</td>
+<td>6</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>秘密树洞，匿名社区，畅所欲言</td>
+<td>6</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>专家老师</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>1对1心理咨询</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image083.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>情绪日记DIY</td>
+<td>6</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>美文音频个性化推荐服务</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image083.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>23.其他假如让你设计一款心理类APP，你会选择怎样的界面风格是  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>欢快活泼可爱—小公举风</td>
+<td>7</td>
+<td><img src="/01/clip_image078.gif" alt="img"><img src="/01/clip_image069.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>简约干净—性冷淡风</td>
+<td>7</td>
+<td><img src="/01/clip_image078.gif" alt="img"><img src="/01/clip_image069.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>时尚热情绚丽—时尚大片风</td>
+<td>5</td>
+<td><img src="/01/clip_image072.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>具有冲击力个性鲜明—艺术潮流风</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image087.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>24.您认为心理健康类app有哪些不必要的功能？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>线上心理咨询师</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>倾诉</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image087.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>心理测试</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>沟通小组</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>专业课程</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>课程直播</td>
+<td>6</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image088.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>科普文章</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>心理FM</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image077.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>监视打卡</td>
+<td>6</td>
+<td><img src="/01/clip_image089.gif" alt="img"><img src="/01/clip_image090.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image087.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>25.市面上心理类APP，不使用的原因？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>没有用过，不知道</td>
+<td>9</td>
+<td><img src="/01/clip_image080.gif" alt="img"><img src="/01/clip_image091.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>不想花钱，觉得自己可以解决</td>
+<td>5</td>
+<td><img src="/01/clip_image092.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>不敢在陌生人面前说心里话</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>觉得事情不是很严重</td>
+<td>2</td>
+<td><img src="/01/clip_image093.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>觉得心很累，不想理会，不想解决问题</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>26.您希望登录的app的方式是？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>QQ登录</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image096.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>微信登录</td>
+<td>5</td>
+<td><img src="/01/clip_image092.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>微博登录</td>
+<td>0</td>
+<td><img src="/01/clip_image097.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>手机号登录</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>不登录或者匿名登录</td>
+<td>5</td>
+<td><img src="/01/clip_image092.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>27.您是否想拥有一处独立私密的个人网络空间，来帮您储存当下的心情与经历，并通过大数据分析来为您推荐适合您的书籍、音乐、电台等？  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>不想拥有</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image096.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>比较想拥有</td>
+<td>7</td>
+<td><img src="/01/clip_image078.gif" alt="img"><img src="/01/clip_image098.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>很想拥有</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>28.对于写信给陌生人分享烦恼或者安抚鼓励，您的看法是？  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>很新颖，愿意一试</td>
+<td>6</td>
+<td><img src="/01/clip_image089.gif" alt="img"><img src="/01/clip_image099.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>看情况，</td>
+<td>2</td>
+<td><img src="/01/clip_image093.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>了解是什么问题</td>
+<td>2</td>
+<td><img src="/01/clip_image093.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>网上留言就行，手写信就算了</td>
+<td>2</td>
+<td><img src="/01/clip_image093.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>29.在APP提供的资源方面，你更看重哪些？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>对时事新闻从心理学角度进行点评</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image100.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>听觉类心理资讯或知识播报</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>图文并茂的心理资讯或知识呈现</td>
+<td>7</td>
+<td><img src="/01/clip_image078.gif" alt="img"><img src="/01/clip_image098.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>很温馨的让我感觉温暖的内容</td>
+<td>6</td>
+<td><img src="/01/clip_image089.gif" alt="img"><img src="/01/clip_image099.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>很新奇的能引起我的兴趣的内容</td>
+<td>6</td>
+<td><img src="/01/clip_image089.gif" alt="img"><img src="/01/clip_image099.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>放松类技巧示范</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>其它</td>
+<td>0</td>
+<td><img src="/01/clip_image101.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>30.对于心理APP上的资源，你希望它的更新频率如何？  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>每天更新3次以上</td>
+<td>2</td>
+<td><img src="/01/clip_image102.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>一天更新1-2次</td>
+<td>4</td>
+<td><img src="/01/clip_image103.gif" alt="img"><img src="/01/clip_image104.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>两三天更新一次</td>
+<td>5</td>
+<td><img src="/01/clip_image105.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>一周更新一次</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>其它</td>
+<td>0</td>
+<td><img src="/01/clip_image101.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>31.如果有一款心理服务APP可以根据您的心理状态进行匹配歌曲，您的期待值是多少？  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>非常不期待</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image100.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>不期待</td>
+<td>0</td>
+<td><img src="/01/clip_image097.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>一般</td>
+<td>6</td>
+<td><img src="/01/clip_image106.gif" alt="img"><img src="/01/clip_image107.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>期待</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>非常期待</td>
+<td>2</td>
+<td><img src="/01/clip_image102.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>32.请问您平时喜欢看哪种类型的视频来缓解烦恼？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>搞笑类</td>
+<td>8</td>
+<td><img src="/01/clip_image108.gif" alt="img"><img src="/01/clip_image109.gif" alt="img">66.67%</td>
+</tr>
+<tr>
+<td>励志类</td>
+<td>5</td>
+<td><img src="/01/clip_image105.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>萌宠类</td>
+<td>9</td>
+<td><img src="/01/clip_image110.gif" alt="img"><img src="/01/clip_image111.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>音乐情感类</td>
+<td>5</td>
+<td><img src="/01/clip_image112.gif" alt="img"><img src="/01/clip_image113.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image097.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>33.如果有一款心理健康APP可以根据您喜欢的视频类型进行匹配，您的期待值是多少？  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>非常不期待</td>
+<td>2</td>
+<td><img src="/01/clip_image114.gif" alt="img"><img src="/01/clip_image115.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>不期待</td>
+<td>3</td>
+<td><img src="/01/clip_image116.gif" alt="img"><img src="/01/clip_image117.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>一般</td>
+<td>5</td>
+<td><img src="/01/clip_image112.gif" alt="img"><img src="/01/clip_image113.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>期待</td>
+<td>1</td>
+<td><img src="/01/clip_image118.gif" alt="img"><img src="/01/clip_image119.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>非常期待</td>
+<td>1</td>
+<td><img src="/01/clip_image118.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>34.如果有一款心理健康APP能为您提供趣味性心理游戏，您的期待是？  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>非常不期待</td>
+<td>1</td>
+<td><img src="/01/clip_image118.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>不期待</td>
+<td>2</td>
+<td><img src="/01/clip_image114.gif" alt="img"><img src="/01/clip_image115.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>一般</td>
+<td>5</td>
+<td><img src="/01/clip_image112.gif" alt="img"><img src="/01/clip_image113.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>期待</td>
+<td>2</td>
+<td><img src="/01/clip_image114.gif" alt="img"><img src="/01/clip_image120.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>非常期待</td>
+<td>2</td>
+<td><img src="/01/clip_image114.gif" alt="img"><img src="/01/clip_image115.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>35.如果有一款心理健康APP能够收听心理电台，您希望电台能够提供哪些方面的文本？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>真人真事类</td>
+<td>5</td>
+<td><img src="/01/clip_image121.gif" alt="img"><img src="/01/clip_image113.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>著名心理读物类</td>
+<td>9</td>
+<td><img src="/01/clip_image110.gif" alt="img"><img src="/01/clip_image111.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>励志文学类</td>
+<td>3</td>
+<td><img src="/01/clip_image116.gif" alt="img"><img src="/01/clip_image117.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>温暖治愈类</td>
+<td>6</td>
+<td><img src="/01/clip_image122.gif" alt="img"><img src="/01/clip_image123.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image097.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/13/%E8%AE%BF%E8%B0%88%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="croooony">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="croooony">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/13/%E8%AE%BF%E8%B0%88%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">访谈记录</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-10-13 00:00:00" itemprop="dateCreated datePublished" datetime="2022-10-13T00:00:00+08:00">2022-10-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-10-14 15:39:51" itemprop="dateModified" datetime="2022-10-14T15:39:51+08:00">2022-10-14</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><strong>访谈记录一：</strong></p>
+<p><strong>时间：</strong>2022.10.12  <strong>地点：</strong>学校  <strong>采访对象：徐先生</strong>  <strong>采访者：</strong>赵怡然</p>
+<p>感谢您能百忙之间参与我们关于心理健康服务的采访，可能在采访过程中会问到一些隐私性的问题，如果这让您感觉到了不适，那我们可以直接跳过这个问题。在采访之前，您有什么问题想要问我吗？</p>
+<p><strong>答：</strong>没有。</p>
+<p><strong>主题一：是否会对心理问题感到困扰</strong></p>
+<ol>
+<li><p>当您心情不好的时候，您通常会选择什么样的方式缓解？</p>
+<p><strong>答：</strong>唱歌。</p>
+</li>
+<li><p>您通常会在什么情况下选择向他人倾诉烦恼？</p>
+</li>
+</ol>
+<p>​    <strong>答：</strong>不开心的时候。</p>
+<ol start="3">
+<li>您对心理咨询的了解程度？</li>
+</ol>
+<p>​    <strong>答：</strong>不了解，心理状况挺好的。</p>
+<ol start="4">
+<li>您身边是否有被心理问题困扰的人？</li>
+</ol>
+<p>​    <strong>答：</strong>有。</p>
+<ol start="5">
+<li>您是通过什么途径寻求心理服务？</li>
+</ol>
+<p>​    <strong>答：</strong>跟朋友打电话。</p>
+<p><strong>主题二：对心理服务app的看法</strong></p>
+<ol start="6">
+<li>如果有一天您需要心理咨询服务，那么可能会是什么原因呢？</li>
+</ol>
+<p>​    <strong>答：</strong>我不需要，我心理还是很健康的。</p>
+<ol start="7">
+<li>您最倾向的咨询方式是什么呢？（比如面对面咨询、视频咨询、语音咨询、文字咨询）</li>
+</ol>
+<p>​    <strong>答：</strong>语音咨询，给朋友打电话倾诉，朋友来开导我。</p>
+<ol start="8">
+<li>您能否接受使用手机APP进行心理咨询服务</li>
+</ol>
+<p>​    <strong>答：</strong>愿意。</p>
+<ol start="9">
+<li>您使用过哪些心理类手机APP</li>
+</ol>
+<p>​    <strong>答：</strong>没用过。</p>
+<ol start="10">
+<li>您对使用手机APP进行心理咨询有哪些顾虑？</li>
+</ol>
+<p>（比如：不了解咨询流程、不确定咨询效果、担心不专业、价格过高、担心隐私安全、担心找不到合适的咨询师）</p>
+<p>​    <strong>答：</strong>你说的所有。</p>
+<p><strong>主题三：对心理咨询服务的期待</strong></p>
+<ol start="11">
+<li>您看重心理咨询师的哪些方面？</li>
+</ol>
+<p>（比如：性别、年龄、专业资质、个人形象、专业经历、教育背景、咨询价格、咨询方式、擅长领域）</p>
+<p>​    <strong>答：</strong>性别，年龄，个人形象。</p>
+<ol start="12">
+<li>您最关注的心理咨询问题领域有哪些？</li>
+</ol>
+<p>（比如：心理健康、人际关系、个人成长、婚姻家庭、职场心理、情绪管理、亲子教育、恋爱心理、性心理、其他）</p>
+<p>​    <strong>答：</strong>婚姻家庭，亲子教育。</p>
+<ol start="13">
+<li>如果请您使用一款心理类APP，除了咨询功能外，你还希望有哪些功能</li>
+</ol>
+<p>（比如：心理测试、心理文章、心理问答(与专业咨询师)、心理问答(与其他用户)、心理课程、心理倾诉、心理LIVE(你与咨询师及其他用户针对一个心理话题即时交流，类似于聊天室)）</p>
+<p>​    <strong>答：</strong>心理LIVE。</p>
+<ol start="14">
+<li>您认为心理健康类的app可以去掉哪些对您来说是不必要或是讨厌的功能？</li>
+</ol>
+<p>​    <strong>答：</strong>监视打卡。</p>
+<ol start="15">
+<li>最后，您对我们的问题有哪些建议吗？</li>
+</ol>
+<p>​    <strong>答：</strong>问题有点繁琐，问题有点重复。</p>
+<p><strong>访谈记录二：</strong></p>
+<p><strong>时间：</strong>2022.10.13  <strong>地点：</strong>学校  <strong>采访对象：</strong>马女士  <strong>采访者：</strong>赵怡然</p>
+<p>感谢您能百忙之间参与我们关于心理健康服务的采访，可能在采访过程中会问到一些隐私性的问题，如果这让您感觉到了不适，那我们可以直接跳过这个问题。在采访之前，您有什么问题想要问我吗？</p>
+<p><strong>答：</strong>没什么问题。</p>
+<p><strong>主题一：是否会对心理问题感到困扰</strong></p>
+<ol>
+<li>当您心情不好的时候，您通常会选择什么样的方式缓解？</li>
+</ol>
+<p>​    <strong>答：</strong>通过运动来缓解。</p>
+<ol start="2">
+<li>您通常会在什么情况下选择向他人倾诉烦恼？</li>
+</ol>
+<p>​    <strong>答：</strong>心里想不明白或者焦虑抑制不住的时候。</p>
+<ol start="3">
+<li>您对心理咨询的了解程度？</li>
+</ol>
+<p>​    <strong>答：</strong>了解一点，在电视剧中看到过。</p>
+<ol start="4">
+<li>您身边是否有被心理问题困扰的人？</li>
+</ol>
+<p>​    <strong>答：</strong>有。</p>
+<ol start="5">
+<li>您是通过什么途径寻求心理服务？</li>
+</ol>
+<p>​    <strong>答：</strong>和家人、朋友打电话。</p>
+<p><strong>主题二：对心理服务app的看法</strong></p>
+<ol start="6">
+<li>如果有一天您需要心理咨询服务，那么可能会是什么原因呢？</li>
+</ol>
+<p>​    <strong>答：</strong>想调整自己的生活状态吧。</p>
+<ol start="7">
+<li>您最倾向的咨询方式是什么呢？（比如面对面咨询、视频咨询、语音咨询、文字咨询）</li>
+</ol>
+<p>​    <strong>答：</strong>面对面咨询。</p>
+<ol start="8">
+<li>您能否接受使用手机APP进行心理咨询服务</li>
+</ol>
+<p>​    <strong>答：</strong>愿意。</p>
+<ol start="9">
+<li>您使用过哪些心理类手机APP</li>
+</ol>
+<p>​    <strong>答：</strong>没用过。</p>
+<ol start="10">
+<li>您对使用手机APP进行心理咨询有哪些顾虑？</li>
+</ol>
+<p>（比如：不了解咨询流程、不确定咨询效果、担心不专业、价格过高、担心隐私安全、担心找不到合适的咨询师）</p>
+<p>​    <strong>答：</strong>担心隐私安全。</p>
+<p><strong>主题三：对心理咨询服务的期待</strong></p>
+<ol start="11">
+<li>您看重心理咨询师的哪些方面？</li>
+</ol>
+<p>（比如：性别、年龄、专业资质、个人形象、专业经历、教育背景、咨询价格、咨询方式、擅长领域）</p>
+<p><strong>答：</strong>性别，年龄，个人形象，咨询价格，咨询方式。</p>
+<ol start="12">
+<li>您最关注的心理咨询问题领域有哪些？</li>
+</ol>
+<p>（比如：心理健康、人际关系、个人成长、婚姻家庭、职场心理、情绪管理、亲子教育、恋爱心理、性心理、其他）</p>
+<p><strong>答：</strong>个人成长，情绪管理，恋爱心理。</p>
+<ol start="13">
+<li>如果请您使用一款心理类APP，除了咨询功能外，你还希望有哪些功能</li>
+</ol>
+<p>（比如：心理测试、心理文章、心理问答(与专业咨询师)、心理问答(与其他用户)、心理课程、心理倾诉、心理LIVE(你与咨询师及其他用户针对一个心理话题即时交流，类似于聊天室)）</p>
+<p><strong>答：</strong>心理问答(与专业咨询师)。</p>
+<ol start="14">
+<li>您认为心理健康类的app可以去掉哪些对您来说是不必要或是讨厌的功能？</li>
+</ol>
+<p><strong>答：</strong>不清楚。</p>
+<ol start="15">
+<li>最后，您对我们的问题有哪些建议吗？</li>
+</ol>
+<p><strong>答：</strong>挺好的没什么建议。</p>
+<p><strong>访谈记录三：</strong></p>
+<p><strong>时间：</strong>2022.10.12  <strong>地点：</strong>学校  <strong>采访对象：</strong>睿の子 <strong>采访者：</strong>李睿</p>
+<p>感谢您能百忙之间参与我们关于心理健康服务的采访，可能在采访过程中会问到一些隐私性的问题，如果这让您感觉到了不适，那我们可以直接跳过这个问题。在采访之前，您有什么问题想要问我吗？</p>
+<p>​    <strong>答：</strong>你吃饭了吗。</p>
+<p><strong>主题一：</strong>是否会对心理问题感到困扰</p>
+<ol>
+<li>当您心情不好的时候，您通常会选择什么样的方式缓解？</li>
+</ol>
+<p>​    <strong>答：</strong>找我的朋友李润，大骂一顿。</p>
+<ol start="2">
+<li>您通常会在什么情况下选择向他人倾诉烦恼？</li>
+</ol>
+<p>​    <strong>答：</strong>问题无法解决需要一些转机的时候。</p>
+<ol start="3">
+<li>您对心理咨询的了解程度？</li>
+</ol>
+<p>​    <strong>答：</strong>了解，和心理医生在屋里玩了一下午纸牌游戏<strong>😤</strong>。</p>
+<ol start="4">
+<li>您身边是否有被心理问题困扰的人？</li>
+</ol>
+<p>​    <strong>答：</strong>有。</p>
+<ol start="5">
+<li>您是通过什么途径寻求心理服务？</li>
+</ol>
+<p>​    <strong>答：</strong>到小红书上发我真丑，到微博上发我玉玉。</p>
+<p><strong>主题二：对心理服务app的看法</strong></p>
+<ol start="6">
+<li>如果有一天您需要心理咨询服务，那么可能会是什么原因呢？</li>
+</ol>
+<p><strong>答：</strong>天气原因，或者过于疲惫。</p>
+<ol start="7">
+<li>您最倾向的咨询方式是什么呢？（比如面对面咨询、视频咨询、语音咨询、文字咨询）</li>
+</ol>
+<p><strong>答：</strong>语音咨询，给朋友打电话倾诉，朋友来开导我。</p>
+<ol start="8">
+<li>您能否接受使用手机APP进行心理咨询服务</li>
+</ol>
+<p><strong>答：</strong>不愿意。</p>
+<ol start="9">
+<li>您使用过哪些心理类手机APP</li>
+</ol>
+<p><strong>答：</strong>没用过。</p>
+<p>10.您对使用手机APP进行心理咨询有哪些顾虑？</p>
+<p>（比如：不了解咨询流程、不确定咨询效果、担心不专业、价格过高、担心隐私安全、担心找不到合适的咨询师）</p>
+<p><strong>答：</strong>或许就跟某些医美APP存在的隐患带给人的担心差不多吧。</p>
+<p><strong>主题三：对心理咨询服务的期待</strong></p>
+<p>11.您看重心理咨询师的哪些方面？</p>
+<p>（比如：性别、年龄、专业资质、个人形象、专业经历、教育背景、咨询价格、咨询方式、擅长领域）</p>
+<p><strong>答：</strong>性别，年龄，个人形象，专业背景。</p>
+<p>12.您最关注的心理咨询问题领域有哪些？</p>
+<p>（比如：心理健康、人际关系、个人成长、婚姻家庭、职场心理、情绪管理、亲子教育、恋爱心理、性心理、其他）</p>
+<p><strong>答：</strong>心理健康，个人成长。</p>
+<p>13.如果请您使用一款心理类APP，除了咨询功能外，你还希望有哪些功能</p>
+<p>（比如：心理测试、心理文章、心理问答(与专业咨询师)、心理问答(与其他用户)、心理课程、心理倾诉、心理LIVE(你与咨询师及其他用户针对一个心理话题即时交流，类似于聊天室)）</p>
+<p><strong>答：</strong>自动推荐特别搞笑的视频。</p>
+<p>14.您认为心理健康类的app可以去掉哪些对您来说是不必要或是讨厌的功能？</p>
+<p><strong>答：</strong>监视打卡。</p>
+<p>15.最后，您对我们的问题有哪些建议吗？</p>
+<p><strong>答：</strong>问卷做那么长，你不考研了吗<strong>😡😡😡</strong></p>
+<p><strong>访谈记录四：</strong></p>
+<p><strong>时间：</strong>2022.10.12  <strong>地点：</strong>学校  <strong>采访对象：李先生  采访者：李睿</strong></p>
+<p>感谢您能百忙之间参与我们关于心理健康服务的采访，可能在采访过程中会问到一些隐私性的问题，如果这让您感觉到了不适，那我们可以直接跳过这个问题。在采访之前，您有什么问题想要问我吗？</p>
+<p><strong>答：</strong>没有。</p>
+<p><strong>主题一：是否会对心理问题感到困扰</strong></p>
+<ol start="10">
+<li>当您心情不好的时候，您通常会选择什么样的方式缓解？</li>
+</ol>
+<p><strong>答：</strong>绘画，飙车。</p>
+<ol start="11">
+<li>您通常会在什么情况下选择向他人倾诉烦恼？</li>
+</ol>
+<p><strong>答：</strong>可以自己消解无需倾诉。</p>
+<ol start="12">
+<li>您对心理咨询的了解程度？</li>
+</ol>
+<p><strong>答：</strong>精通。</p>
+<ol start="13">
+<li>您身边是否有被心理问题困扰的人？</li>
+</ol>
+<p><strong>答：</strong>有。</p>
+<ol start="14">
+<li>您是通过什么途径寻求心理服务？</li>
+</ol>
+<p><strong>答：</strong>阅读相关专业文献。</p>
+<p><strong>主题二：对心理服务app的看法</strong></p>
+<ol start="15">
+<li>如果有一天您需要心理咨询服务，那么可能会是什么原因呢？</li>
+</ol>
+<p><strong>答：</strong>了解心理咨询师的业务水平。</p>
+<ol start="16">
+<li>您最倾向的咨询方式是什么呢？（比如面对面咨询、视频咨询、语音咨询、文字咨询）</li>
+</ol>
+<p><strong>答：</strong>文字咨询，对文字对掌握比较娴熟。</p>
+<ol start="17">
+<li>您能否接受使用手机APP进行心理咨询服务</li>
+</ol>
+<p><strong>答：</strong>愿意。</p>
+<ol start="18">
+<li>您使用过哪些心理类手机APP</li>
+</ol>
+<p><strong>答：</strong>没有用过。</p>
+<p>10.您对使用手机APP进行心理咨询有哪些顾虑？</p>
+<p>（比如：不了解咨询流程、不确定咨询效果、担心不专业、价格过高、担心隐私安全、担心找不到合适的咨询师）</p>
+<p><strong>答：</strong>主要担心隐私的安全性。</p>
+<p><strong>主题三：对心理咨询服务的期待</strong></p>
+<p>11.您看重心理咨询师的哪些方面？</p>
+<p>（比如：性别、年龄、专业资质、个人形象、专业经历、教育背景、咨询价格、咨询方式、擅长领域）</p>
+<p><strong>答：</strong>性别，专业资质，咨询价格。</p>
+<p>12.您最关注的心理咨询问题领域有哪些？</p>
+<p>（比如：心理健康、人际关系、个人成长、婚姻家庭、职场心理、情绪管理、亲子教育、恋爱心理、性心理、其他）</p>
+<p><strong>答：</strong>其他。</p>
+<p>13.如果请您使用一款心理类APP，除了咨询功能外，你还希望有哪些功能</p>
+<p>（比如：心理测试、心理文章、心理问答(与专业咨询师)、心理问答(与其他用户)、心理课程、心理倾诉、心理LIVE(你与咨询师及其他用户针对一个心理话题即时交流，类似于聊天室)）</p>
+<p><strong>答：</strong>心理问答。</p>
+<p>14.您认为心理健康类的app可以去掉哪些对您来说是不必要或是讨厌的功能？</p>
+<p><strong>答：</strong>心理测试。</p>
+<p>15.最后，您对我们的问题有哪些建议吗？</p>
+<p><strong>答：</strong>没有，感觉非常好。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/12/%E6%8A%A5%E5%91%8A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="croooony">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="croooony">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/12/%E6%8A%A5%E5%91%8A/" class="post-title-link" itemprop="url">报告</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-10-12 00:00:00" itemprop="dateCreated datePublished" datetime="2022-10-12T00:00:00+08:00">2022-10-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-10-14 15:39:43" itemprop="dateModified" datetime="2022-10-14T15:39:43+08:00">2022-10-14</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <table>
+<thead>
+<tr>
+<th>Team Name</th>
+<th>croooony</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Members</td>
+<td>何宇川</td>
+<td>李睿</td>
+<td>赵怡然</td>
+<td>乔婧</td>
+</tr>
+</tbody></table>
+<p><strong>项目介绍：</strong></p>
+<p>现代人在生活中面临着巨大压力，高房价、低生育率、996工作制等社会现实，而拖延症、自我轻视、容貌焦虑、失业恐惧、消极情绪、过高期待等常见心理也让本不平坦的生活雪上加霜。在一系列压力的叠加之下，年轻人失去了本该有的锐气和朝气，变得暮气沉沉。一些人因为一件小事而瞬间崩溃，一些人工作 996，生病 ICU，焦虑及抑郁情绪常有，想要与朋友交流发泄情绪时会面临或缺少空闲时间、或没有能交心的朋友，想寻求专业的帮助却又难保不会落入伪科学的圈套。一方面国人对情绪心理问题缺乏正确的认知、逃避甚至有抗拒心理；另一方面国内目前心理体系的鱼龙混杂，缺乏合适的机构、缺乏专业的人士。而作为出现情绪、心理问题人们的身边，家人、朋友，无法及时发现并提供有效的帮助，也是一大重要问题。针对上述存在的问题，我们希望提供一个解决方案，能够让人们正确认识情绪心理问题，能够让社会、人们及时发现存在的心理问题，一起解决问题；能够帮助人们调整情绪，宣泄情绪，让社会焕发生命力。</p>
+<h1 id="一、采访脚本"><a href="#一、采访脚本" class="headerlink" title="一、采访脚本"></a><strong>一、采访脚本</strong></h1><p>感谢您能百忙之间参与我们关于心理健康服务的采访，可能在采访过程中会问到一些隐私性的问题，如果这让您感觉到了不适，那我们可以直接跳过这个问题。在采访之前，您有什么问题想要问我吗？</p>
+<p><strong>主题一：是否会对心理问题感到困扰</strong></p>
+<ol>
+<li><p>当您心情不好的时候，您通常会选择什么样的方式缓解？</p>
+</li>
+<li><p>您通常会在什么情况下选择向他人倾诉烦恼？</p>
+</li>
+<li><p>您对心理咨询的了解？</p>
+</li>
+<li><p>您身边是否有被心理问题困扰的人？</p>
+</li>
+<li><p>您是通过什么途径寻求心理服务？</p>
+</li>
+</ol>
+<p><strong>主题二：对心理服务app的看法</strong></p>
+<ol start="6">
+<li><p>如果有一天您需要心理咨询服务，那么可能会是什么原因呢？</p>
+</li>
+<li><p>您最倾向的咨询方式是什么呢？（比如面对面咨询、视频咨询、语音咨询、文字咨询）</p>
+</li>
+<li><p>您能否接受使用手机APP进行心理咨询服务</p>
+</li>
+<li><p>您使用过哪些心理类手机APP</p>
+</li>
+<li><p>您对使用手机APP进行心理咨询有哪些顾虑？</p>
+</li>
+</ol>
+<p>（比如：不了解咨询流程、不确定咨询效果、担心不专业、价格过高、担心隐私安全、担心找不到合适的咨询师）</p>
+<p><strong>主题三：对心理咨询服务的期待</strong></p>
+<ol start="11">
+<li>您看重心理咨询师的哪些方面？</li>
+</ol>
+<p>（比如：性别、年龄、专业资质、个人形象、专业经历、教育背景、咨询价格、咨询方式、擅长领域）</p>
+<ol start="12">
+<li>您最关注的心理咨询问题领域有哪些？</li>
+</ol>
+<p>（比如：心理健康、人际关系、个人成长、婚姻家庭、职场心理、情绪管理、亲子教育、恋爱心理、性心理、其他）</p>
+<ol start="13">
+<li>如果请您使用一款心理类APP，除了咨询功能外，你还希望有哪些功能</li>
+</ol>
+<p>（比如：心理测试、心理文章、心理问答(与专业咨询师)、心理问答(与其他用户)、心理课程、心理倾诉、心理LIVE(你与咨询师及其他用户针对一个心理话题即时交流，类似于聊天室)）</p>
+<ol start="14">
+<li><p>您认为心理健康类的app可以去掉哪些对您来说是不必要或是讨厌的功能？</p>
+</li>
+<li><p>最后，您对我们的问题有哪些建议吗？</p>
+</li>
+</ol>
+<p><strong>二、问卷调查</strong></p>
+<ol>
+<li>您认为现在自己的心理状况如何?</li>
+</ol>
+<p>□ 很健康</p>
+<p>□ 比较健康</p>
+<p>□ 不健康</p>
+<p>□ 其他______</p>
+<p>2.你如何发泄自己的负面情绪，遇到困扰你一般会向谁请教？</p>
+<p>□ 向父母诉说</p>
+<p>□ 向亲人诉说</p>
+<p>□ 向知心朋友诉说</p>
+<p>□ 向同学&#x2F;同事诉说</p>
+<p>□ 向男&#x2F;女朋友诉说</p>
+<p>□ 憋在心里</p>
+<p>□ 做一些运动发泄</p>
+<p>□ 其他______</p>
+<p>□ 不管</p>
+<p>3.你认为可以从下列哪些资源中获得心理方面的帮助？</p>
+<p>□ 个体咨询</p>
+<p>□ 团体心理辅导</p>
+<p>□ 心理健康教育讲座</p>
+<p>□ 网上心理咨询</p>
+<p>□ 没有获益</p>
+<p>□ 不需要心理辅导</p>
+<p>□ 其他______</p>
+<p>4.你觉得对你来说去做心理咨询有什么阻力</p>
+<p>□ 对心理咨询工作不太了解，不知道该怎么做</p>
+<p>□ 害怕别人讲，觉得去做心理咨询是心理有问题的人的事</p>
+<p>□ 自我心理防御，保护隐私不想自己的问题被知道</p>
+<p>□ 对心理咨询师不太了解，不知道其专业知识是否够格</p>
+<p>□ 其他</p>
+<p>5.您更愿意选择哪种心理治疗的形式？（可多选）</p>
+<p>□ 电话沟通</p>
+<p>□ 即时通讯软件（微信等）</p>
+<p>□ 医疗机构</p>
+<p>□ 网络视频</p>
+<p>□ 线下茶室、咖啡厅等</p>
+<p>6.关于心理治疗您认为重要的是？（多选）</p>
+<p>□ 保密原则</p>
+<p>□ 就诊方便舒适</p>
+<p>□ 时长合适</p>
+<p>□ 解决现实问题</p>
+<p>□ 效果好</p>
+<p>□ 起效快</p>
+<p>□ 没有副反应</p>
+<p>□ 不会复发</p>
+<p>□ 性价比高</p>
+<p>□ 其他______</p>
+<p>7.您对心理相关知识和信息的获取途径（多选）：</p>
+<p>□ 微信、微博推送</p>
+<p>□ 抖音、小红书等短视频APP推送</p>
+<p>□ 专业人士普及</p>
+<p>□ 互联网搜索</p>
+<p>□ 亲朋好友告知</p>
+<p>□ 其他______</p>
+<p>8.与传统线下心理咨询相比，您认为线上心理咨询有哪些优势？（多选）</p>
+<p>□ 方便</p>
+<p>□ 节约时间</p>
+<p>□ 有效避免自我尴尬</p>
+<p>□ 费用低</p>
+<p>□ 其他______</p>
+<p>9.如果有一款心理类app有以下功能，您对哪些功能最感兴趣</p>
+<p>□ 实时心理测试与评价</p>
+<p>□ 走进聊天室，热门话题抢先知</p>
+<p>□ 秘密树洞，匿名社区，畅所欲言</p>
+<p>□ 专家老师</p>
+<p>□ 1对1心理咨询</p>
+<p>□ 情绪日记DIY</p>
+<p>□ 美文音频个性化推荐服务</p>
+<p>10.假如让你设计一款心理类app，你会选择怎样的界面风格是</p>
+<p>□ 欢快活泼可爱—小公举风</p>
+<p>□ 简约干净—性冷淡风</p>
+<p>□ 时尚热情绚丽—时尚大片风</p>
+<p>□ 具有冲击力个性鲜明—艺术潮流风</p>
+<p>□ 其他</p>
+<p>11.市面上心理类APP，不使用的原因？</p>
+<p>□ 没有用过，不知道</p>
+<p>□ 不想花钱，觉得自己可以解决</p>
+<p>□ 不敢在陌生人面前说心里话</p>
+<p>□ 觉得事情不是很严重</p>
+<p>□ 觉得心很累，不想理会，不想解决问题</p>
+<p>12.对于写信给陌生人分享烦恼或者安抚鼓励，您的看法是？</p>
+<p>□ 很新颖，愿意一试</p>
+<p>□ 看情况， 了解是什么问题</p>
+<p>□ 网上留言就行，手写信就算了</p>
+<p>13.如果心理类APP会提供一些个性化服务，您希望包含哪些功能？</p>
+<p>□ 解压小游戏</p>
+<p>□ 发出自己的故事，有人写信回复</p>
+<p>□ 树洞（私人网络空间）</p>
+<p>□ 其他</p>
+<p>14.在APP提供的资源方面，你更看重哪些？(选3个)</p>
+<p>□ 对时事新闻从心理学角度进行点评</p>
+<p>□ 听觉类心理资讯或知识播报</p>
+<p>□ 图文并茂的心理资讯或知识呈现</p>
+<p>□ 很温馨的让我感觉温暖的内容</p>
+<p>□ 很新奇的能引起我的兴趣的内容</p>
+<p>□ 放松类技巧示范</p>
+<p>□ 其它</p>
+<p>15当您想咨询心理准备问题时，您是否会使用心理咨询app？</p>
+<p>□ 会</p>
+<p>□ 不会</p>
+<p>□ 观望中</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/11/%E5%9B%A2%E9%98%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="croooony">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="croooony">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/11/%E5%9B%A2%E9%98%9F/" class="post-title-link" itemprop="url">团队</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-10-11 00:00:00" itemprop="dateCreated datePublished" datetime="2022-10-11T00:00:00+08:00">2022-10-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-10-14 15:39:29" itemprop="dateModified" datetime="2022-10-14T15:39:29+08:00">2022-10-14</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <table>
+   <tr>
+      <td>Team Name</td>
+      <td>croooony</td>
+   </tr>
+   <tr>
+      <td>Members</td>
+      <td>何宇川</td>
+      <td>李睿</td>
+      <td>赵怡然</td>
+      <td>乔婧</td>
+   </tr>
+   <tr>
+      <td>Preferred contact info(QQ)</td>
+      <td>1530087345</td>
+      <td>979112508</td>
+      <td>453728079</td>
+      <td>1656754834</td>
+   </tr>
+   <tr>
+      <td>Skills Inventory</td>
+      <td>编程设计</td>
+      <td>绘画设计</td>
+      <td>功能发掘</td>
+      <td>文案书写</td>
+   </tr>
+   <tr>
+      <td>Communication Plan</td>
+      <td colspan="4">·定期在QQ群中集会，对项目进行分析讨论，对项目整体进度和方向进行把控；
+          ·发现问题，和对应的任务负责人进行沟通，以期对项目进行提高和改进。</td>
+   </tr>
+   <tr>
+      <td>Rules</td>
+      <td colspan="4">·每个人可以对项目工作提出批评、建议和监督；
       ·每个人都要努力学习人机交互知识，刻苦钻研专业知识，以便对我们的项目起到推动作用；
-      ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/10/10/%E6%80%9D%E8%80%83%E6%94%AF%E6%8C%81%E4%B8%AA%E4%BA%BA%E5%8C%BB%E7%96%97%E4%BF%9D%E5%81%A5%E7%9A%84%E6%96%B9%E6%B3%95/" title="思考支持个人医疗保健的方法"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="思考支持个人医疗保健的方法"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/10/10/%E6%80%9D%E8%80%83%E6%94%AF%E6%8C%81%E4%B8%AA%E4%BA%BA%E5%8C%BB%E7%96%97%E4%BF%9D%E5%81%A5%E7%9A%84%E6%96%B9%E6%B3%95/" title="思考支持个人医疗保健的方法">思考支持个人医疗保健的方法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-09T16:00:00.000Z" title="Created 2022-10-10 00:00:00">2022-10-10</time></span></div><div class="content">思考支持个人医疗保健的方法
-问题1：背景是什么？
-
-现代人在生活中面临着巨大压力，高房价、低生育率、996工作制等社会现实，而拖延症、自我轻视、容貌焦虑、失业恐惧、消极情绪、过高期待等常见心理也让本不平坦的生活雪上加霜。
-
-问题2：有什么问题？
-
-在一系列压力的叠加之下，年轻人失去了本该有的锐气和朝气，变得暮气沉沉。一些人因为一件小事而瞬间崩溃，一些人工作 996，生病 ICU，焦虑及抑郁情绪常有，想要与朋友交流发泄情绪时会面临或缺少空闲时间、或没有能交心的朋友，想寻求专业的帮助却又难保不会落入伪科学的圈套。
-
-问题3：为什么这是一个需要解决的重要问题？
-
-一方面国人对情绪心理问题缺乏正确的认知、逃避甚至有抗拒心理；另一方面国内目前心理体系的鱼龙混杂，缺乏合适的机构、缺乏专业的人士。而作为出现情绪、心理问题人们的身边，家人、朋友，无法及时发现并提供有效的帮助，也是一大重要问题。针对上述存在的问题，我们希望提供一个解决方案，能够让人们正确认识情绪心理问题，能够让社会、人们及时发现存在的心理问题，一起解决问题；能够帮助人们调整情绪，宣泄情绪，让社会焕发生命力。
-
-问题4：为什么智能手机应用 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/10/09/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E8%AF%A6%E7%BB%86%E7%BB%93%E6%9E%9C/" title="调查问卷详细结果"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="调查问卷详细结果"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/10/09/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E8%AF%A6%E7%BB%86%E7%BB%93%E6%9E%9C/" title="调查问卷详细结果">调查问卷详细结果</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-08T16:00:00.000Z" title="Created 2022-10-09 00:00:00">2022-10-09</time></span></div><div class="content">
+      ·每个人在项目中积极努力工作。</td>
+   </tr>
+</table>
 
 
-序号
-提交答卷时间
-所用时间
-来源
-来源详情
-来自IP
-1.您的性别
-2.您的年龄段
-3.您平时出现焦虑的原因有哪些？
-4.你如何发泄自己的负面情绪，遇到困扰你一般会向谁请教？
-5.若你在人际交往方面存在压力，你认为是什么原因造成的呢？
-6.您认为现在自己的心理状况如何?
-7.你认为可以从下列哪些资源中获得心理方面的帮助？
-8.在心理健康教育和咨询工作方面，您认为需要加强的是？
-9.您对去医院进行心理疏导或者心理治疗持一种怎样的态度？
-10.您更愿意选择哪种心理咨询的形式？
-11.关于心理咨询、治疗您认为重要的是？
-12.心理咨询、治疗相关知识和信息的获取途径：
-13.与传统线下心理咨询相比，您认为线上心理咨询有哪些优势？
-14.与传统线下心理咨询相比，您认为线上心理咨询存在哪些劣势？
-15.您是否希望有一个心理健康类app能够帮助你调节情绪
-16.您对心理类APP 哪些内容比较感兴趣？
-17.您是否想了解自己一阶段的情绪波动情况
-18.如果在你心情不开心时&#x2F;波动时，有一个地方可以让你和陌生人或者线上好友聊天抒发，你会去使用吗
-19.假如有一个社区平台可以让你匿名发帖并 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">croooony</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/" title="调查问卷结果统计"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="调查问卷结果统计"/></a><div class="content"><a class="title" href="/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/" title="调查问卷结果统计">调查问卷结果统计</a><time datetime="2022-10-13T16:00:00.000Z" title="Created 2022-10-14 00:00:00">2022-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/13/%E8%AE%BF%E8%B0%88%E8%AE%B0%E5%BD%95/" title="访谈记录"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="访谈记录"/></a><div class="content"><a class="title" href="/2022/10/13/%E8%AE%BF%E8%B0%88%E8%AE%B0%E5%BD%95/" title="访谈记录">访谈记录</a><time datetime="2022-10-12T16:00:00.000Z" title="Created 2022-10-13 00:00:00">2022-10-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/12/%E6%8A%A5%E5%91%8A/" title="报告"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="报告"/></a><div class="content"><a class="title" href="/2022/10/12/%E6%8A%A5%E5%91%8A/" title="报告">报告</a><time datetime="2022-10-11T16:00:00.000Z" title="Created 2022-10-12 00:00:00">2022-10-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/11/%E5%9B%A2%E9%98%9F/" title="团队"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="团队"/></a><div class="content"><a class="title" href="/2022/10/11/%E5%9B%A2%E9%98%9F/" title="团队">团队</a><time datetime="2022-10-10T16:00:00.000Z" title="Created 2022-10-11 00:00:00">2022-10-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/10/%E6%80%9D%E8%80%83%E6%94%AF%E6%8C%81%E4%B8%AA%E4%BA%BA%E5%8C%BB%E7%96%97%E4%BF%9D%E5%81%A5%E7%9A%84%E6%96%B9%E6%B3%95/" title="思考支持个人医疗保健的方法"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="思考支持个人医疗保健的方法"/></a><div class="content"><a class="title" href="/2022/10/10/%E6%80%9D%E8%80%83%E6%94%AF%E6%8C%81%E4%B8%AA%E4%BA%BA%E5%8C%BB%E7%96%97%E4%BF%9D%E5%81%A5%E7%9A%84%E6%96%B9%E6%B3%95/" title="思考支持个人医疗保健的方法">思考支持个人医疗保健的方法</a><time datetime="2022-10-09T16:00:00.000Z" title="Created 2022-10-10 00:00:00">2022-10-10</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/project/" style="font-size: 1.1em; color: #999">project</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">October 2022</span><span class="card-archive-list-count">6</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">6</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-10-14T10:36:41.579Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By croooony</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+
+
+
+
+
+<blockquote>
+<ul>
+<li><p>团队名称：为您的团队命名</p>
+<p>成员：团队成员姓名和首选联系信息</p>
+<p>技能清单：谁擅长什么</p>
+<p>沟通计划：作为一个团队，你将如何沟通？</p>
+<p>规则：你们都同意做的事</p>
+</li>
+</ul>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/10/%E6%80%9D%E8%80%83%E6%94%AF%E6%8C%81%E4%B8%AA%E4%BA%BA%E5%8C%BB%E7%96%97%E4%BF%9D%E5%81%A5%E7%9A%84%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="croooony">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="croooony">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/10/%E6%80%9D%E8%80%83%E6%94%AF%E6%8C%81%E4%B8%AA%E4%BA%BA%E5%8C%BB%E7%96%97%E4%BF%9D%E5%81%A5%E7%9A%84%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">思考支持个人医疗保健的方法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-10-10 00:00:00" itemprop="dateCreated datePublished" datetime="2022-10-10T00:00:00+08:00">2022-10-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-10-14 15:44:09" itemprop="dateModified" datetime="2022-10-14T15:44:09+08:00">2022-10-14</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="思考支持个人医疗保健的方法"><a href="#思考支持个人医疗保健的方法" class="headerlink" title="思考支持个人医疗保健的方法"></a><strong>思考支持个人医疗保健的方法</strong></h1><blockquote>
+<p><strong>问题1：背景是什么？</strong></p>
+<ul>
+<li>现代人在生活中面临着巨大压力，高房价、低生育率、996工作制等社会现实，而拖延症、自我轻视、容貌焦虑、失业恐惧、消极情绪、过高期待等常见心理也让本不平坦的生活雪上加霜。</li>
+</ul>
+<p><strong>问题2：有什么问题？</strong></p>
+<ul>
+<li>在一系列压力的叠加之下，年轻人失去了本该有的锐气和朝气，变得暮气沉沉。一些人因为一件小事而瞬间崩溃，一些人工作 996，生病 ICU，焦虑及抑郁情绪常有，想要与朋友交流发泄情绪时会面临或缺少空闲时间、或没有能交心的朋友，想寻求专业的帮助却又难保不会落入伪科学的圈套。</li>
+</ul>
+<p><strong>问题3：为什么这是一个需要解决的重要问题？</strong></p>
+<ul>
+<li>一方面国人对情绪心理问题缺乏正确的认知、逃避甚至有抗拒心理；另一方面国内目前心理体系的鱼龙混杂，缺乏合适的机构、缺乏专业的人士。而作为出现情绪、心理问题人们的身边，家人、朋友，无法及时发现并提供有效的帮助，也是一大重要问题。针对上述存在的问题，我们希望提供一个解决方案，能够让人们正确认识情绪心理问题，能够让社会、人们及时发现存在的心理问题，一起解决问题；能够帮助人们调整情绪，宣泄情绪，让社会焕发生命力。</li>
+</ul>
+<p><strong>问题4：为什么智能手机应用程序是一个合适的解决方案（例如，为什么不是网站）？</strong></p>
+<ul>
+<li>手机相对于其他电子设备来说具有便携且功能众多的特性，智能手机应用程序相对于网站也更加安全可靠，考虑到用户安全及实用性等问题，我们以手机应用为目标进行程序开发，适应于用户快节奏的生活，解决用户想要专业的心理服务而缺少空闲时间的问题。</li>
+</ul>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/09/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E8%AF%A6%E7%BB%86%E7%BB%93%E6%9E%9C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="croooony">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="croooony">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/09/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E8%AF%A6%E7%BB%86%E7%BB%93%E6%9E%9C/" class="post-title-link" itemprop="url">调查问卷详细结果</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-10-09 00:00:00" itemprop="dateCreated datePublished" datetime="2022-10-09T00:00:00+08:00">2022-10-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-10-14 15:40:10" itemprop="dateModified" datetime="2022-10-14T15:40:10+08:00">2022-10-14</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <table>
+<thead>
+<tr>
+<th>序号</th>
+<th>提交答卷时间</th>
+<th>所用时间</th>
+<th>来源</th>
+<th>来源详情</th>
+<th>来自IP</th>
+<th>1.您的性别</th>
+<th>2.您的年龄段</th>
+<th>3.您平时出现焦虑的原因有哪些？</th>
+<th>4.你如何发泄自己的负面情绪，遇到困扰你一般会向谁请教？</th>
+<th>5.若你在人际交往方面存在压力，你认为是什么原因造成的呢？</th>
+<th>6.您认为现在自己的心理状况如何?</th>
+<th>7.你认为可以从下列哪些资源中获得心理方面的帮助？</th>
+<th>8.在心理健康教育和咨询工作方面，您认为需要加强的是？</th>
+<th>9.您对去医院进行心理疏导或者心理治疗持一种怎样的态度？</th>
+<th>10.您更愿意选择哪种心理咨询的形式？</th>
+<th>11.关于心理咨询、治疗您认为重要的是？</th>
+<th>12.心理咨询、治疗相关知识和信息的获取途径：</th>
+<th>13.与传统线下心理咨询相比，您认为线上心理咨询有哪些优势？</th>
+<th>14.与传统线下心理咨询相比，您认为线上心理咨询存在哪些劣势？</th>
+<th>15.您是否希望有一个心理健康类app能够帮助你调节情绪</th>
+<th>16.您对心理类APP 哪些内容比较感兴趣？</th>
+<th>17.您是否想了解自己一阶段的情绪波动情况</th>
+<th>18.如果在你心情不开心时&#x2F;波动时，有一个地方可以让你和陌生人或者线上好友聊天抒发，你会去使用吗</th>
+<th>19.假如有一个社区平台可以让你匿名发帖并且给他人的帖子评论留言，你会不会加入这个社区</th>
+<th>20.在你心情糟糕的时候，你会选择寻求心理咨询的帮助吗</th>
+<th>21.假如有一个app可以将你每天的情绪用日记的形式记录下来，你会去使用吗</th>
+<th>22.如果有一款心理类app有以下功能，您对哪些功能最感兴趣</th>
+<th>23.其他假如让你设计一款心理类APP，你会选择怎样的界面风格是</th>
+<th>24.您认为心理健康类app有哪些不必要的功能？</th>
+<th>25.市面上心理类APP，不使用的原因？</th>
+<th>26.您希望登录的app的方式是？</th>
+<th>27.您是否想拥有一处独立私密的个人网络空间，来帮您储存当下的心情与经历，并通过大数据分析来为您推荐适合您的书籍、音乐、电台等？</th>
+<th>28.对于写信给陌生人分享烦恼或者安抚鼓励，您的看法是？</th>
+<th>29.在APP提供的资源方面，你更看重哪些？</th>
+<th>30.对于心理APP上的资源，你希望它的更新频率如何？</th>
+<th>31.如果有一款心理服务APP可以根据您的心理状态进行匹配歌曲，您的期待值是多少？</th>
+<th>32.请问您平时喜欢看哪种类型的视频来缓解烦恼？</th>
+<th>33.如果有一款心理健康APP可以根据您喜欢的视频类型进行匹配，您的期待值是多少？</th>
+<th>34.如果有一款心理健康APP能为您提供趣味性心理游戏，您的期待是？</th>
+<th>35.如果有一款心理健康APP能够收听心理电台，您希望电台能够提供哪些方面的文本？</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2</td>
+<td>2022&#x2F;10&#x2F;12 9:59:51</td>
+<td>188秒</td>
+<td>手机提交</td>
+<td>直接访问</td>
+<td>223.80.110.118(山东-青岛)</td>
+<td>女</td>
+<td>18~25</td>
+<td>学业&#x2F;工作问题┋人际关系问题┋个人前途问题</td>
+<td>向父母诉说┋向知心朋友诉说┋做一些运动发泄</td>
+<td>担心与同学&#x2F;同事相处不融洽┋与他人的沟通交往存在障碍，缺乏技巧┋自己性格过于内向</td>
+<td>比较健康</td>
+<td>个体咨询┋团体心理辅导┋心理健康教育讲座┋网上心理咨询</td>
+<td>个体咨询团体┋心理辅导┋心理健康教育讲座┋网上心理咨询┋心理测试</td>
+<td>中立，更喜欢线上问诊或者其他更保密的形式</td>
+<td>电话沟通┋即时通讯软件(微信等)┋医疗机构┋网络视频┋线下茶室、咖啡厅等</td>
+<td>保密原则┋就诊方便舒适┋时长合适</td>
+<td>微信、微博推送┋抖音、小红书等短视频APP推送┋专业人士普及┋互联网搜索</td>
+<td>有效避免自我尴尬</td>
+<td>担心自身隐私泄露┋自身权益的维护</td>
+<td>无所谓</td>
+<td>专业测评┋心理知识┋专业咨询┋发泄窗口┋解压游戏</td>
+<td>是</td>
+<td>会</td>
+<td>会</td>
+<td>会</td>
+<td>会</td>
+<td>实时心理测试与评价┋走进聊天室，热门话题抢先知┋秘密树洞，匿名社区，畅所欲言┋专家老师┋1对1心理咨询┋情绪日记DIY┋美文音频个性化推荐服务</td>
+<td>欢快活泼可爱—小公举风┋简约干净—性冷淡风</td>
+<td>其他</td>
+<td>没有用过，不知道</td>
+<td>不登录或者匿名登录</td>
+<td>很想拥有</td>
+<td>很新颖，愿意一试</td>
+<td>图文并茂的心理资讯或知识呈现┋很温馨的让我感觉温暖的内容</td>
+<td>一天更新1-2次</td>
+<td>非常不期待</td>
+<td>搞笑类┋励志类┋萌宠类┋音乐情感类</td>
+<td>非常不期待</td>
+<td>非常期待</td>
+<td>著名心理读物类┋励志文学类┋温暖治愈类</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2022&#x2F;10&#x2F;12 9:59:57</td>
+<td>115秒</td>
+<td>手机提交</td>
+<td>直接访问</td>
+<td>117.136.92.28(山东-青岛)</td>
+<td>男</td>
+<td>18~25</td>
+<td>学业&#x2F;工作问题┋人际关系问题┋个人前途问题┋恋爱问题┋经济问题┋家庭问题</td>
+<td>向父母诉说┋向亲人诉说┋向知心朋友诉说┋向同学&#x2F;同事诉说┋向男&#x2F;女朋友诉说┋憋在心里┋做一些运动发泄</td>
+<td>没有压力</td>
+<td>很健康</td>
+<td>不需要心理辅导</td>
+<td>不需要加强</td>
+<td>排斥，去医院会带来更大压力，可能会引起别人异样眼光</td>
+<td>电话沟通┋即时通讯软件(微信等)┋医疗机构┋网络视频┋线下茶室、咖啡厅等</td>
+<td>保密原则┋就诊方便舒适┋时长合适┋解决现实问题┋效果好┋起效快</td>
+<td>抖音、小红书等短视频APP推送</td>
+<td>有效避免自我尴尬</td>
+<td>担心自身隐私泄露</td>
+<td>无所谓</td>
+<td>线下活动</td>
+<td>否</td>
+<td>会</td>
+<td>会</td>
+<td>会</td>
+<td>会</td>
+<td>走进聊天室，热门话题抢先知</td>
+<td>欢快活泼可爱—小公举风</td>
+<td>课程直播</td>
+<td>没有用过，不知道┋不敢在陌生人面前说心里话┋觉得事情不是很严重</td>
+<td>微信登录</td>
+<td>不想拥有</td>
+<td>很新颖，愿意一试</td>
+<td>对时事新闻从心理学角度进行点评</td>
+<td>两三天更新一次</td>
+<td>一般</td>
+<td>搞笑类┋萌宠类</td>
+<td>一般</td>
+<td>不期待</td>
+<td>著名心理读物类</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2022&#x2F;10&#x2F;12 10:05:14</td>
+<td>95秒</td>
+<td>手机提交</td>
+<td>直接访问</td>
+<td>36.152.117.33(江苏-南京)</td>
+<td>男</td>
+<td>18~25</td>
+<td>人际关系问题┋个人前途问题┋恋爱问题</td>
+<td>向父母诉说┋向知心朋友诉说┋向男&#x2F;女朋友诉说</td>
+<td>担心与同学&#x2F;同事相处不融洽┋自己性格过于内向┋朋友都太利益，不够纯洁</td>
+<td>比较健康</td>
+<td>个体咨询┋团体心理辅导┋网上心理咨询┋没有获益</td>
+<td>个体咨询团体┋心理辅导┋网上心理咨询</td>
+<td>排斥，去医院会带来更大压力，可能会引起别人异样眼光</td>
+<td>即时通讯软件(微信等)┋网络视频</td>
+<td>就诊方便舒适┋时长合适┋效果好</td>
+<td>微信、微博推送┋抖音、小红书等短视频APP推送┋互联网搜索</td>
+<td>节约时间┋有效避免自我尴尬┋费用低</td>
+<td>技术不够成熟┋担心自身隐私泄露┋自身权益的维护</td>
+<td>无所谓</td>
+<td>趣味测试</td>
+<td>是</td>
+<td>会</td>
+<td>会</td>
+<td>会</td>
+<td>会</td>
+<td>实时心理测试与评价┋专家老师┋1对1心理咨询┋情绪日记DIY</td>
+<td>欢快活泼可爱—小公举风┋时尚热情绚丽—时尚大片风┋具有冲击力个性鲜明—艺术潮流风</td>
+<td>心理测试┋专业课程┋课程直播┋科普文章</td>
+<td>不想花钱，觉得自己可以解决┋不敢在陌生人面前说心里话┋觉得事情不是很严重</td>
+<td>微信登录┋手机号登录┋不登录或者匿名登录</td>
+<td>不想拥有</td>
+<td>看情况，</td>
+<td>听觉类心理资讯或知识播报┋很温馨的让我感觉温暖的内容┋很新奇的能引起我的兴趣的内容</td>
+<td>一周更新一次</td>
+<td>非常不期待</td>
+<td>励志类</td>
+<td>不期待</td>
+<td>非常不期待</td>
+<td>著名心理读物类┋励志文学类┋温暖治愈类</td>
+</tr>
+<tr>
+<td>5</td>
+<td>2022&#x2F;10&#x2F;12 10:34:05</td>
+<td>471秒</td>
+<td>手机提交</td>
+<td>直接访问</td>
+<td>223.80.110.15(山东-青岛)</td>
+<td>女</td>
+<td>18~25</td>
+<td>学业&#x2F;工作问题┋人际关系问题┋个人前途问题</td>
+<td>向亲人诉说┋向知心朋友诉说┋憋在心里</td>
+<td>与他人的沟通交往存在障碍，缺乏技巧┋自己性格过于内向</td>
+<td>比较健康</td>
+<td>个体咨询</td>
+<td>个体咨询团体┋心理辅导┋网上心理咨询</td>
+<td>中立，更喜欢线上问诊或者其他更保密的形式</td>
+<td>电话沟通┋即时通讯软件(微信等)┋线下茶室、咖啡厅等</td>
+<td>保密原则┋就诊方便舒适┋解决现实问题┋性价比高</td>
+<td>微信、微博推送┋抖音、小红书等短视频APP推送┋互联网搜索</td>
+<td>方便</td>
+<td>技术不够成熟┋担心自身隐私泄露</td>
+<td>无所谓</td>
+<td>趣味测试┋专业测评┋心理知识┋专业咨询</td>
+<td>是</td>
+<td>会</td>
+<td>会</td>
+<td>不会</td>
+<td>不会</td>
+<td>秘密树洞，匿名社区，畅所欲言</td>
+<td>简约干净—性冷淡风</td>
+<td>课程直播┋监视打卡</td>
+<td>不想花钱，觉得自己可以解决</td>
+<td>不登录或者匿名登录</td>
+<td>比较想拥有</td>
+<td>很新颖，愿意一试</td>
+<td>图文并茂的心理资讯或知识呈现┋很温馨的让我感觉温暖的内容┋很新奇的能引起我的兴趣的内容</td>
+<td>两三天更新一次</td>
+<td>一般</td>
+<td>搞笑类┋萌宠类┋音乐情感类</td>
+<td>不期待</td>
+<td>期待</td>
+<td>著名心理读物类</td>
+</tr>
+<tr>
+<td>6</td>
+<td>2022&#x2F;10&#x2F;12 10:57:53</td>
+<td>341秒</td>
+<td>微信</td>
+<td>N&#x2F;A</td>
+<td>114.254.1.171(北京-北京)</td>
+<td>女</td>
+<td>18~25</td>
+<td>学业&#x2F;工作问题┋人际关系问题┋个人前途问题┋恋爱问题┋经济问题┋家庭问题</td>
+<td>向父母诉说┋向知心朋友诉说┋憋在心里┋做一些运动发泄</td>
+<td>担心与同学&#x2F;同事相处不融洽┋与他人的沟通交往存在障碍，缺乏技巧</td>
+<td>比较健康</td>
+<td>网上心理咨询</td>
+<td>个体咨询团体┋心理辅导┋心理健康教育讲座┋网上心理咨询</td>
+<td>排斥，去医院会带来更大压力，可能会引起别人异样眼光</td>
+<td>电话沟通┋线下茶室、咖啡厅等</td>
+<td>保密原则┋就诊方便舒适┋时长合适┋解决现实问题┋效果好┋起效快┋没有副反应┋不会复发┋性价比高</td>
+<td>抖音、小红书等短视频APP推送</td>
+<td>方便┋节约时间┋有效避免自我尴尬┋费用低</td>
+<td>技术不够成熟┋作用效果不明显┋担心自身隐私泄露┋自身权益的维护</td>
+<td>无所谓</td>
+<td>线下活动┋趣味测试┋专业测评┋心理知识┋专业咨询┋发泄窗口┋解压游戏</td>
+<td>是</td>
+<td>不会</td>
+<td>不会</td>
+<td>会</td>
+<td>会</td>
+<td>实时心理测试与评价┋走进聊天室，热门话题抢先知┋秘密树洞，匿名社区，畅所欲言┋专家老师┋1对1心理咨询┋情绪日记DIY┋美文音频个性化推荐服务</td>
+<td>欢快活泼可爱—小公举风┋简约干净—性冷淡风┋时尚热情绚丽—时尚大片风┋具有冲击力个性鲜明—艺术潮流风</td>
+<td>心理测试┋专业课程┋课程直播┋科普文章┋心理FM┋监视打卡</td>
+<td>没有用过，不知道┋不敢在陌生人面前说心里话┋觉得心很累，不想理会，不想解决问题</td>
+<td>不登录或者匿名登录</td>
+<td>比较想拥有</td>
+<td>了解是什么问题</td>
+<td>对时事新闻从心理学角度进行点评┋听觉类心理资讯或知识播报┋图文并茂的心理资讯或知识呈现┋很温馨的让我感觉温暖的内容┋很新奇的能引起我的兴趣的内容┋放松类技巧示范</td>
+<td>每天更新3次以上</td>
+<td>非常期待</td>
+<td>搞笑类┋励志类┋萌宠类┋音乐情感类</td>
+<td>非常不期待</td>
+<td>一般</td>
+<td>真人真事类┋著名心理读物类┋温暖治愈类</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2022&#x2F;10&#x2F;12 11:20:32</td>
+<td>350秒</td>
+<td>手机提交</td>
+<td>直接访问</td>
+<td>117.136.78.114(山东-烟台)</td>
+<td>女</td>
+<td>18~25</td>
+<td>个人前途问题</td>
+<td>向知心朋友诉说</td>
+<td>与他人的沟通交往存在障碍，缺乏技巧</td>
+<td>比较健康</td>
+<td>心理健康教育讲座</td>
+<td>心理辅导</td>
+<td>中立，更喜欢线上问诊或者其他更保密的形式</td>
+<td>线下茶室、咖啡厅等</td>
+<td>保密原则┋就诊方便舒适┋性价比高</td>
+<td>亲朋好友告知</td>
+<td>有效避免自我尴尬┋费用低</td>
+<td>技术不够成熟┋担心自身隐私泄露</td>
+<td>不需要</td>
+<td>其他〖不感兴趣〗</td>
+<td>是</td>
+<td>不会</td>
+<td>不会</td>
+<td>不会</td>
+<td>会</td>
+<td>情绪日记DIY</td>
+<td>其他</td>
+<td>线上心理咨询师┋监视打卡</td>
+<td>没有用过，不知道┋不想花钱，觉得自己可以解决</td>
+<td>手机号登录</td>
+<td>不想拥有</td>
+<td>网上留言就行，手写信就算了</td>
+<td>图文并茂的心理资讯或知识呈现┋很新奇的能引起我的兴趣的内容</td>
+<td>一天更新1-2次</td>
+<td>非常不期待</td>
+<td>搞笑类┋萌宠类</td>
+<td>一般</td>
+<td>一般</td>
+<td>著名心理读物类</td>
+</tr>
+<tr>
+<td>8</td>
+<td>2022&#x2F;10&#x2F;12 12:14:35</td>
+<td>179秒</td>
+<td>手机提交</td>
+<td>直接访问</td>
+<td>223.104.190.177(山东-济南)</td>
+<td>男</td>
+<td>18~25</td>
+<td>个人前途问题┋恋爱问题</td>
+<td>向同学&#x2F;同事诉说┋憋在心里</td>
+<td>担心与同学&#x2F;同事相处不融洽┋与他人的沟通交往存在障碍，缺乏技巧</td>
+<td>比较健康</td>
+<td>不需要心理辅导</td>
+<td>个体咨询团体</td>
+<td>中立，更喜欢线上问诊或者其他更保密的形式</td>
+<td>即时通讯软件(微信等)</td>
+<td>解决现实问题┋效果好┋性价比高</td>
+<td>专业人士普及</td>
+<td>方便┋节约时间┋有效避免自我尴尬┋费用低</td>
+<td>技术不够成熟┋担心自身隐私泄露┋自身权益的维护</td>
+<td>无所谓</td>
+<td>趣味测试┋专业测评┋心理知识┋专业咨询</td>
+<td>否</td>
+<td>会</td>
+<td>会</td>
+<td>不会</td>
+<td>不会</td>
+<td>走进聊天室，热门话题抢先知┋秘密树洞，匿名社区，畅所欲言</td>
+<td>简约干净—性冷淡风</td>
+<td>沟通小组┋监视打卡</td>
+<td>没有用过，不知道</td>
+<td>QQ登录</td>
+<td>比较想拥有</td>
+<td>网上留言就行，手写信就算了</td>
+<td>很新奇的能引起我的兴趣的内容</td>
+<td>每天更新3次以上</td>
+<td>一般</td>
+<td>搞笑类</td>
+<td>一般</td>
+<td>一般</td>
+<td>真人真事类</td>
+</tr>
+<tr>
+<td>9</td>
+<td>2022&#x2F;10&#x2F;12 15:20:22</td>
+<td>261秒</td>
+<td>手机提交</td>
+<td>直接访问</td>
+<td>223.80.110.59(山东-青岛)</td>
+<td>女</td>
+<td>18~25</td>
+<td>学业&#x2F;工作问题┋个人前途问题</td>
+<td>向知心朋友诉说</td>
+<td>其他〖不知道〗</td>
+<td>比较健康</td>
+<td>不需要心理辅导</td>
+<td>心理测试</td>
+<td>中立，更喜欢线上问诊或者其他更保密的形式</td>
+<td>即时通讯软件(微信等)</td>
+<td>保密原则┋就诊方便舒适┋时长合适┋解决现实问题┋效果好┋起效快┋没有副反应┋不会复发┋性价比高</td>
+<td>微信、微博推送┋抖音、小红书等短视频APP推送┋专业人士普及┋互联网搜索┋亲朋好友告知</td>
+<td>方便┋节约时间┋有效避免自我尴尬┋费用低</td>
+<td>技术不够成熟┋作用效果不明显┋担心自身隐私泄露┋自身权益的维护</td>
+<td>无所谓</td>
+<td>趣味测试</td>
+<td>否</td>
+<td>会</td>
+<td>会</td>
+<td>不会</td>
+<td>会</td>
+<td>走进聊天室，热门话题抢先知┋秘密树洞，匿名社区，畅所欲言┋情绪日记DIY</td>
+<td>欢快活泼可爱—小公举风┋简约干净—性冷淡风┋时尚热情绚丽—时尚大片风┋具有冲击力个性鲜明—艺术潮流风</td>
+<td>沟通小组┋专业课程┋课程直播┋监视打卡</td>
+<td>没有用过，不知道</td>
+<td>不登录或者匿名登录</td>
+<td>比较想拥有</td>
+<td>很新颖，愿意一试</td>
+<td>很温馨的让我感觉温暖的内容</td>
+<td>两三天更新一次</td>
+<td>非常期待</td>
+<td>搞笑类┋萌宠类</td>
+<td>非常期待</td>
+<td>非常期待</td>
+<td>真人真事类┋著名心理读物类┋温暖治愈类</td>
+</tr>
+<tr>
+<td>10</td>
+<td>2022&#x2F;10&#x2F;12 15:29:10</td>
+<td>164秒</td>
+<td>手机提交</td>
+<td>直接访问</td>
+<td>223.80.110.91(山东-青岛)</td>
+<td>女</td>
+<td>18~25</td>
+<td>学业&#x2F;工作问题┋个人前途问题</td>
+<td>向父母诉说┋向亲人诉说┋向知心朋友诉说┋向男&#x2F;女朋友诉说</td>
+<td>担心与同学&#x2F;同事相处不融洽</td>
+<td>很健康</td>
+<td>个体咨询┋心理健康教育讲座┋网上心理咨询</td>
+<td>个体咨询团体</td>
+<td>支持，去医院可以更有效的帮助心理问题的解决</td>
+<td>即时通讯软件(微信等)┋医疗机构</td>
+<td>保密原则┋就诊方便舒适┋解决现实问题</td>
+<td>微信、微博推送┋抖音、小红书等短视频APP推送┋专业人士普及</td>
+<td>方便┋节约时间┋有效避免自我尴尬</td>
+<td>技术不够成熟┋作用效果不明显┋担心自身隐私泄露</td>
+<td>无所谓</td>
+<td>线下活动┋趣味测试┋专业测评</td>
+<td>是</td>
+<td>会</td>
+<td>会</td>
+<td>会</td>
+<td>会</td>
+<td>实时心理测试与评价┋走进聊天室，热门话题抢先知┋秘密树洞，匿名社区，畅所欲言</td>
+<td>欢快活泼可爱—小公举风┋简约干净—性冷淡风┋时尚热情绚丽—时尚大片风</td>
+<td>线上心理咨询师┋心理测试┋沟通小组</td>
+<td>没有用过，不知道┋不想花钱，觉得自己可以解决</td>
+<td>QQ登录┋微信登录</td>
+<td>比较想拥有</td>
+<td>很新颖，愿意一试</td>
+<td>听觉类心理资讯或知识播报</td>
+<td>一天更新1-2次</td>
+<td>一般</td>
+<td>萌宠类</td>
+<td>不期待</td>
+<td>不期待</td>
+<td>著名心理读物类</td>
+</tr>
+<tr>
+<td>11</td>
+<td>2022&#x2F;10&#x2F;13 9:47:40</td>
+<td>275秒</td>
+<td>手机提交</td>
+<td>直接访问</td>
+<td>223.80.110.60(山东-青岛)</td>
+<td>男</td>
+<td>18~25</td>
+<td>学业&#x2F;工作问题┋个人前途问题┋恋爱问题</td>
+<td>向父母诉说┋向知心朋友诉说</td>
+<td>没有压力</td>
+<td>其他〖一般〗</td>
+<td>不需要心理辅导</td>
+<td>心理辅导</td>
+<td>中立，更喜欢线上问诊或者其他更保密的形式</td>
+<td>即时通讯软件(微信等)</td>
+<td>保密原则</td>
+<td>微信、微博推送┋抖音、小红书等短视频APP推送</td>
+<td>方便┋节约时间</td>
+<td>担心自身隐私泄露┋自身权益的维护</td>
+<td>无所谓</td>
+<td>专业测评┋心理知识</td>
+<td>是</td>
+<td>不会</td>
+<td>不会</td>
+<td>不会</td>
+<td>不会</td>
+<td>美文音频个性化推荐服务</td>
+<td>简约干净—性冷淡风</td>
+<td>课程直播┋监视打卡</td>
+<td>没有用过，不知道</td>
+<td>QQ登录┋微信登录┋手机号登录</td>
+<td>比较想拥有</td>
+<td>看情况，</td>
+<td>图文并茂的心理资讯或知识呈现┋很温馨的让我感觉温暖的内容</td>
+<td>两三天更新一次</td>
+<td>一般</td>
+<td>励志类┋音乐情感类</td>
+<td>一般</td>
+<td>一般</td>
+<td>真人真事类┋著名心理读物类┋励志文学类┋温暖治愈类</td>
+</tr>
+<tr>
+<td>12</td>
+<td>2022&#x2F;10&#x2F;13 18:25:49</td>
+<td>63秒</td>
+<td>手机提交</td>
+<td>直接访问</td>
+<td>117.136.78.6(山东-烟台)</td>
+<td>男</td>
+<td>40以上</td>
+<td>学业&#x2F;工作问题┋人际关系问题┋个人前途问题┋恋爱问题┋经济问题┋家庭问题</td>
+<td>向父母诉说┋向亲人诉说┋向知心朋友诉说┋向同学&#x2F;同事诉说┋向男&#x2F;女朋友诉说┋憋在心里┋做一些运动发泄┋不管</td>
+<td>担心与同学&#x2F;同事相处不融洽┋与他人的沟通交往存在障碍，缺乏技巧┋自己性格过于内向┋朋友都太利益，不够纯洁┋没有压力</td>
+<td>很健康</td>
+<td>个体咨询┋团体心理辅导┋心理健康教育讲座┋网上心理咨询┋没有获益┋不需要心理辅导</td>
+<td>个体咨询团体┋心理辅导┋心理健康教育讲座┋网上心理咨询┋心理测试┋不需要加强</td>
+<td>排斥，去医院会带来更大压力，可能会引起别人异样眼光</td>
+<td>即时通讯软件(微信等)</td>
+<td>就诊方便舒适</td>
+<td>亲朋好友告知</td>
+<td>费用低</td>
+<td>担心自身隐私泄露┋自身权益的维护</td>
+<td>需要</td>
+<td>专业测评</td>
+<td>否</td>
+<td>会</td>
+<td>会</td>
+<td>会</td>
+<td>不会</td>
+<td>实时心理测试与评价</td>
+<td>时尚热情绚丽—时尚大片风</td>
+<td>倾诉</td>
+<td>不敢在陌生人面前说心里话</td>
+<td>手机号登录</td>
+<td>比较想拥有</td>
+<td>了解是什么问题</td>
+<td>图文并茂的心理资讯或知识呈现</td>
+<td>两三天更新一次</td>
+<td>期待</td>
+<td>萌宠类┋音乐情感类</td>
+<td>期待</td>
+<td>期待</td>
+<td>温暖治愈类</td>
+</tr>
+<tr>
+<td>13</td>
+<td>2022&#x2F;10&#x2F;13 18:26:36</td>
+<td>103秒</td>
+<td>手机提交</td>
+<td>直接访问</td>
+<td>113.129.80.117(山东-济南)</td>
+<td>男</td>
+<td>18~25</td>
+<td>学业&#x2F;工作问题┋恋爱问题</td>
+<td>向知心朋友诉说┋做一些运动发泄</td>
+<td>担心与同学&#x2F;同事相处不融洽┋自己性格过于内向</td>
+<td>很健康</td>
+<td>个体咨询┋团体心理辅导┋心理健康教育讲座</td>
+<td>心理辅导</td>
+<td>排斥，去医院会带来更大压力，可能会引起别人异样眼光</td>
+<td>电话沟通</td>
+<td>保密原则┋就诊方便舒适</td>
+<td>微信、微博推送┋抖音、小红书等短视频APP推送┋专业人士普及</td>
+<td>方便┋节约时间┋有效避免自我尴尬</td>
+<td>技术不够成熟┋担心自身隐私泄露</td>
+<td>不需要</td>
+<td>线下活动┋趣味测试┋专业测评</td>
+<td>否</td>
+<td>会</td>
+<td>会</td>
+<td>不会</td>
+<td>会</td>
+<td>实时心理测试与评价┋情绪日记DIY</td>
+<td>欢快活泼可爱—小公举风</td>
+<td>线上心理咨询师┋沟通小组┋科普文章</td>
+<td>没有用过，不知道┋不想花钱，觉得自己可以解决</td>
+<td>QQ登录┋微信登录</td>
+<td>不想拥有</td>
+<td>很新颖，愿意一试</td>
+<td>对时事新闻从心理学角度进行点评┋图文并茂的心理资讯或知识呈现┋很新奇的能引起我的兴趣的内容</td>
+<td>一天更新1-2次</td>
+<td>一般</td>
+<td>搞笑类┋励志类┋萌宠类</td>
+<td>一般</td>
+<td>一般</td>
+<td>真人真事类</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">croooony</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">croooony</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
