@@ -145,6 +145,2886 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/20/look/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="croooony">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="croooony">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/20/look/" class="post-title-link" itemprop="url">调查问卷数据分析</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-10-20 00:00:00 / Modified: 11:17:21" itemprop="dateCreated datePublished" datetime="2022-10-20T00:00:00+08:00">2022-10-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <table>
+<thead>
+<tr>
+<th>Team Name</th>
+<th>croooony</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Members</td>
+<td>何宇川</td>
+<td>李睿</td>
+<td>赵怡然</td>
+<td>乔婧</td>
+</tr>
+</tbody></table>
+<h1 id="您的性别"><a href="#您的性别" class="headerlink" title="您的性别"></a>您的性别</h1><div id="echarts2952" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2952'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'item'
+    },
+    legend: {
+        top: '5%',
+        left: 'center'
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: ['40%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                show: false,
+                position: 'center'
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '40',
+                    fontWeight: 'bold'
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            itemStyle: {
+                normal: {
+                    //饼状图阴影，值越大阴影亮度越高
+                    shadowBlur: 200,
+                    shadowColor: '#FFA07A'
+                }
+            },
+            data: [
+                {value: 6, name: '男'},
+                {value: 6, name: '女'},
+        
+
+            ]
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h1 id="您的年龄段"><a href="#您的年龄段" class="headerlink" title="您的年龄段"></a>您的年龄段</h1><div id="echarts9559" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts9559'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'item'
+    },
+    legend: {
+        top: '5%',
+        left: 'center'
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: ['40%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                show: false,
+                position: 'center'
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '40',
+                    fontWeight: 'bold'
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            itemStyle: {
+                normal: {
+                    //饼状图阴影，值越大阴影亮度越高
+                    shadowBlur: 200,
+                    shadowColor: '#FFA07A'
+                }
+            },
+            data: [
+                {value: 11, name: '18~25'},
+                {value: 1, name: '40以上'},
+        
+            ]
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h1 id="您平时出现焦虑的原因有哪些？"><a href="#您平时出现焦虑的原因有哪些？" class="headerlink" title="您平时出现焦虑的原因有哪些？"></a>您平时出现焦虑的原因有哪些？</h1><div id="echarts2368" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2368'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['学业/工作问题', '人际关系问题', '个人前途问题', '恋爱问题', '经济问题', '家庭问题', '其他'],
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 3, 5, 6, 2, 2,0]
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [5, 3, 6, 1, 1, 1,0]
+    
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 6, 11, 7, 3, 3,0]
+    
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h1 id="你如何发泄自己的负面情绪，遇到困扰你一般会向谁请教？"><a href="#你如何发泄自己的负面情绪，遇到困扰你一般会向谁请教？" class="headerlink" title="你如何发泄自己的负面情绪，遇到困扰你一般会向谁请教？"></a>你如何发泄自己的负面情绪，遇到困扰你一般会向谁请教？</h1><div id="echarts4541" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4541'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['向父母诉说', '向亲人诉说', '向知心朋友诉说', '向同学/同事诉说', '向男/女朋友诉说', '憋在心里', '做一些运动发泄', '不管']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 2, 5, 3, 3, 3, 3, 1]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [3, 2, 6, 0, 1, 2, 2, 0]
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [7, 4, 11, 3, 4, 5, 5, 1]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h1 id="若你在人际交往方面存在压力，你认为是什么原因造成的呢？"><a href="#若你在人际交往方面存在压力，你认为是什么原因造成的呢？" class="headerlink" title="若你在人际交往方面存在压力，你认为是什么原因造成的呢？"></a>若你在人际交往方面存在压力，你认为是什么原因造成的呢？</h1><div id="echarts6353" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6353'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['没有压力', '担心与同学/同事相处不融洽', '自己性格过于内向', '朋友都太利益，不够纯洁', '与他人的沟通交往存在障碍，缺乏技巧', '其他〖不知道〗']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 4, 3, 2, 2, 0]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [0, 3, 2, 0, 4, 1]
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [3, 7, 5, 2, 6, 1]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+
+<h1 id="您认为现在自己的心理状况如何"><a href="#您认为现在自己的心理状况如何" class="headerlink" title="您认为现在自己的心理状况如何?"></a>您认为现在自己的心理状况如何?</h1><div id="echarts3221" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3221'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['很健康', '比较健康', '其他〖一般〗']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 2, 1]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 5, 0]
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [4, 7, 1]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="你认为可以从下列哪些资源中获得心理方面的帮助？"><a href="#你认为可以从下列哪些资源中获得心理方面的帮助？" class="headerlink" title="你认为可以从下列哪些资源中获得心理方面的帮助？"></a>你认为可以从下列哪些资源中获得心理方面的帮助？</h1><div id="echarts8151" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts8151'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['不需要心理辅导', '个体咨询', '团体心理辅导', '网上心理咨询', '没有获益', '心理健康教育讲座']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 3, 3, 2, 2, 2]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 3, 1, 3, 0, 3]
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [5, 6, 4, 5, 2, 5]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="在心理健康教育和咨询工作方面，您认为需要加强的是？"><a href="#在心理健康教育和咨询工作方面，您认为需要加强的是？" class="headerlink" title="在心理健康教育和咨询工作方面，您认为需要加强的是？"></a>在心理健康教育和咨询工作方面，您认为需要加强的是？</h1><div id="echarts5403" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts5403'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['不需要加强', '个体咨询团体', '心理辅导', '网上心理咨询', '心理健康教育讲座', '心理测试']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [2, 3, 4, 2, 1, 1]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [0, 4, 4, 3, 2, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [2, 7, 8, 5, 3, 3]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您对去医院进行心理疏导或者心理治疗持一种怎样的态度？"><a href="#您对去医院进行心理疏导或者心理治疗持一种怎样的态度？" class="headerlink" title="您对去医院进行心理疏导或者心理治疗持一种怎样的态度？"></a>您对去医院进行心理疏导或者心理治疗持一种怎样的态度？</h1><div id="echarts6044" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6044'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['排斥，去医院会带来更大压力，可能会引起别人异样眼光', '中立，更喜欢线上问诊或者其他更保密的形式', '支持，去医院可以更有效的帮助心理问题的解决']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 2, 0]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 4, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [5, 6, 1]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您更愿意选择哪种心理咨询的形式？"><a href="#您更愿意选择哪种心理咨询的形式？" class="headerlink" title="您更愿意选择哪种心理咨询的形式？"></a>您更愿意选择哪种心理咨询的形式？</h1><div id="echarts3443" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3443'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['电话沟通', '即时通讯软件(微信等)', '医疗机构', '网络视频', '线下茶室、咖啡厅等']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [2, 5, 1, 2, 1]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [3, 4, 2, 1, 4]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [5, 9, 3, 3, 5]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="关于心理咨询、治疗您认为重要的是？"><a href="#关于心理咨询、治疗您认为重要的是？" class="headerlink" title="关于心理咨询、治疗您认为重要的是？"></a>关于心理咨询、治疗您认为重要的是？</h1><div id="echarts6409" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6409'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['保密原则', '就诊方便舒适', '时长合适', '解决现实问题', '效果好', '起效快', '性价比高', '没有副反应', '不会复发']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 4, 2, 2, 3, 1, 1, 0, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [6, 6, 3, 4, 2, 2, 4, 2, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 10, 5, 6, 5, 3, 5, 2, 2]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="心理咨询、治疗相关知识和信息的获取途径："><a href="#心理咨询、治疗相关知识和信息的获取途径：" class="headerlink" title="心理咨询、治疗相关知识和信息的获取途径："></a>心理咨询、治疗相关知识和信息的获取途径：</h1><div id="echarts1689" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts1689'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['抖音、小红书等短视频APP推送', '微信、微博推送', '互联网搜索', '专业人士普及', '亲朋好友告知']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 3, 1, 2, 1]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [5, 4, 3, 3, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 7, 4, 5, 3]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="与传统线下心理咨询相比，您认为线上心理咨询有哪些优势？"><a href="#与传统线下心理咨询相比，您认为线上心理咨询有哪些优势？" class="headerlink" title="与传统线下心理咨询相比，您认为线上心理咨询有哪些优势？"></a>与传统线下心理咨询相比，您认为线上心理咨询有哪些优势？</h1><div id="echarts3889" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3889'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['有效避免自我尴尬', '节约时间', '费用低', '方便']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 4, 3, 3]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [5, 3, 3, 4]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 7, 6, 7]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="与传统线下心理咨询相比，您认为线上心理咨询存在哪些劣势？"><a href="#与传统线下心理咨询相比，您认为线上心理咨询存在哪些劣势？" class="headerlink" title="与传统线下心理咨询相比，您认为线上心理咨询存在哪些劣势？"></a>与传统线下心理咨询相比，您认为线上心理咨询存在哪些劣势？</h1><div id="echarts9707" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts9707'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['担心自身隐私泄露', '技术不够成熟', '自身权益的维护', '作用效果不明显']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [6, 3, 4, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [6, 5, 3, 3]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [12, 8, 7, 3]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您是否希望有一个心理健康类app能够帮助你调节情绪"><a href="#您是否希望有一个心理健康类app能够帮助你调节情绪" class="headerlink" title="您是否希望有一个心理健康类app能够帮助你调节情绪"></a>您是否希望有一个心理健康类app能够帮助你调节情绪</h1><div id="echarts7385" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts7385'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['无所谓', '需要', '不需要']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 1, 1]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [5, 0, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 1, 2]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您对心理类APP-哪些内容比较感兴趣？"><a href="#您对心理类APP-哪些内容比较感兴趣？" class="headerlink" title="您对心理类APP 哪些内容比较感兴趣？"></a>您对心理类APP 哪些内容比较感兴趣？</h1><div id="echarts4367" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4367'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['线下活动', '趣味测试', '专业测评', '心理知识', '专业咨询', '发泄窗口', '解压游戏', '其他〖不感兴趣〗']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [2, 3, 4, 2, 1, 0, 0, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [2, 4, 4, 3, 3, 2, 2, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [4, 7, 8, 5, 4, 2, 2, 1]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您是否想了解自己一阶段的情绪波动情况"><a href="#您是否想了解自己一阶段的情绪波动情况" class="headerlink" title="您是否想了解自己一阶段的情绪波动情况"></a>您是否想了解自己一阶段的情绪波动情况</h1><div id="echarts2541" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2541'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['否', '是']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 2]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 5]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [5, 7]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="如果在你心情不开心时-x2F-波动时，有一个地方可以让你和陌生人或者线上好友聊天抒发，你会去使"><a href="#如果在你心情不开心时-x2F-波动时，有一个地方可以让你和陌生人或者线上好友聊天抒发，你会去使" class="headerlink" title="如果在你心情不开心时&#x2F;波动时，有一个地方可以让你和陌生人或者线上好友聊天抒发，你会去使"></a>如果在你心情不开心时&#x2F;波动时，有一个地方可以让你和陌生人或者线上好友聊天抒发，你会去使</h1><div id="echarts7399" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts7399'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['会', '不会']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [5, 1]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [4, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 3]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>用吗
+
+<h1 id="假如有一个社区平台可以让你匿名发帖并且给他人的帖子评论留言，你会不会加入这个社区"><a href="#假如有一个社区平台可以让你匿名发帖并且给他人的帖子评论留言，你会不会加入这个社区" class="headerlink" title="假如有一个社区平台可以让你匿名发帖并且给他人的帖子评论留言，你会不会加入这个社区"></a>假如有一个社区平台可以让你匿名发帖并且给他人的帖子评论留言，你会不会加入这个社区</h1><div id="echarts1879" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts1879'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['会', '不会']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [5, 1]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [4, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 3]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="在你心情糟糕的时候，你会选择寻求心理咨询的帮助吗"><a href="#在你心情糟糕的时候，你会选择寻求心理咨询的帮助吗" class="headerlink" title="在你心情糟糕的时候，你会选择寻求心理咨询的帮助吗"></a>在你心情糟糕的时候，你会选择寻求心理咨询的帮助吗</h1><div id="echarts5372" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts5372'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['会', '不会']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 3]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [3, 3]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [6, 6]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<p>[‘会’, ‘不会’]<br>[3, 3]<br>[3, 3]<br>[6, 6]</p>
+<h1 id="假如有一个app可以将你每天的情绪用日记的形式记录下来，你会去使用吗"><a href="#假如有一个app可以将你每天的情绪用日记的形式记录下来，你会去使用吗" class="headerlink" title="假如有一个app可以将你每天的情绪用日记的形式记录下来，你会去使用吗"></a>假如有一个app可以将你每天的情绪用日记的形式记录下来，你会去使用吗</h1><div id="echarts4635" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4635'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['会', '不会']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 3]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [5, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [8, 4]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="如果有一款心理类app有以下功能，您对哪些功能最感兴趣"><a href="#如果有一款心理类app有以下功能，您对哪些功能最感兴趣" class="headerlink" title="如果有一款心理类app有以下功能，您对哪些功能最感兴趣"></a>如果有一款心理类app有以下功能，您对哪些功能最感兴趣</h1><div id="echarts4231" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4231'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['走进聊天室，热门话题抢先知', '实时心理测试与评价', '专家老师', '1对1心理咨询', '情绪日记DIY', '秘密树洞，匿名社区，畅所欲言', '美文音频个性化推荐服务']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [2, 3, 1, 1, 2, 1, 1]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [4, 3, 2, 2, 4, 5, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [6, 6, 3, 3, 6, 6, 3]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="其他假如让你设计一款心理类APP，你会选择怎样的界面风格是"><a href="#其他假如让你设计一款心理类APP，你会选择怎样的界面风格是" class="headerlink" title="其他假如让你设计一款心理类APP，你会选择怎样的界面风格是"></a>其他假如让你设计一款心理类APP，你会选择怎样的界面风格是</h1><div id="echarts7031" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts7031'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['欢快活泼可爱—小公举风', '时尚热情绚丽—时尚大片风', '具有冲击力个性鲜明—艺术潮流风', '简约干净—性冷淡风', '其他']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 2, 1, 2, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [4, 3, 2, 5, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [7, 5, 3, 7, 1]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您认为心理健康类app有哪些不必要的功能？"><a href="#您认为心理健康类app有哪些不必要的功能？" class="headerlink" title="您认为心理健康类app有哪些不必要的功能？"></a>您认为心理健康类app有哪些不必要的功能？</h1><div id="echarts2248" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2248'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['课程直播', '心理测试', '专业课程', '科普文章', '沟通小组', '监视打卡', '倾诉', '线上心理咨询师', '其他', '心理FM']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 1, 1, 2, 2, 2, 1, 1, 0, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [3, 2, 2, 1, 2, 4, 0, 2, 1, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [6, 3, 3, 3, 4, 6, 1, 3, 1, 1]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="市面上心理类APP，不使用的原因？"><a href="#市面上心理类APP，不使用的原因？" class="headerlink" title="市面上心理类APP，不使用的原因？"></a>市面上心理类APP，不使用的原因？</h1><div id="echarts5386" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts5386'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['没有用过，不知道', '不敢在陌生人面前说心里话', '觉得事情不是很严重', '不想花钱，觉得自己可以解决', '觉得心很累，不想理会，不想解决问题']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 3, 2, 2, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [5, 1, 0, 3, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 4, 2, 5, 1]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您希望登录的app的方式是？"><a href="#您希望登录的app的方式是？" class="headerlink" title="您希望登录的app的方式是？"></a>您希望登录的app的方式是？</h1><div id="echarts2839" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2839'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['微信登录', '手机号登录', '不登录或者匿名登录', 'QQ登录']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 3, 1, 3]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 1, 4, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [5, 4, 5, 4]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您是否想拥有一处独立私密的个人网络空间，来帮您储存当下的心情与经历，并通过大数据分析来为您推荐适合您的书籍、音乐、电台等？"><a href="#您是否想拥有一处独立私密的个人网络空间，来帮您储存当下的心情与经历，并通过大数据分析来为您推荐适合您的书籍、音乐、电台等？" class="headerlink" title="您是否想拥有一处独立私密的个人网络空间，来帮您储存当下的心情与经历，并通过大数据分析来为您推荐适合您的书籍、音乐、电台等？"></a>您是否想拥有一处独立私密的个人网络空间，来帮您储存当下的心情与经历，并通过大数据分析来为您推荐适合您的书籍、音乐、电台等？</h1><div id="echarts2559" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2559'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['不想拥有', '比较想拥有', '很想拥有']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 3, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 4, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [4, 7, 1]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="对于写信给陌生人分享烦恼或者安抚鼓励，您的看法是？"><a href="#对于写信给陌生人分享烦恼或者安抚鼓励，您的看法是？" class="headerlink" title="对于写信给陌生人分享烦恼或者安抚鼓励，您的看法是？"></a>对于写信给陌生人分享烦恼或者安抚鼓励，您的看法是？</h1><div id="echarts1088" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts1088'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['很新颖，愿意一试', '看情况，', '网上留言就行，手写信就算了', '了解是什么问题']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [2, 2, 1, 1]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [4, 0, 1, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [6, 2, 2, 2]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="在APP提供的资源方面，你更看重哪些？"><a href="#在APP提供的资源方面，你更看重哪些？" class="headerlink" title="在APP提供的资源方面，你更看重哪些？"></a>在APP提供的资源方面，你更看重哪些？</h1><div id="echarts1655" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts1655'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['对时事新闻从心理学角度进行点评', '听觉类心理资讯或知识播报', '很温馨的让我感觉温暖的内容', '很新奇的能引起我的兴趣的内容', '图文并茂的心理资讯或知识呈现', '放松类技巧示范']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [2, 1, 2, 3, 3, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 2, 4, 3, 4, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [3, 3, 6, 6, 7, 1]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="对于心理APP上的资源，你希望它的更新频率如何？"><a href="#对于心理APP上的资源，你希望它的更新频率如何？" class="headerlink" title="对于心理APP上的资源，你希望它的更新频率如何？"></a>对于心理APP上的资源，你希望它的更新频率如何？</h1><div id="echarts2567" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2567'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['两三天更新一次', '一周更新一次', '每天更新3次以上', '一天更新1-2次']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 1, 1, 1]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [2, 0, 1, 3]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [5, 1, 2, 4]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="如果有一款心理服务APP可以根据您的心理状态进行匹配歌曲，您的期待值是多少？"><a href="#如果有一款心理服务APP可以根据您的心理状态进行匹配歌曲，您的期待值是多少？" class="headerlink" title="如果有一款心理服务APP可以根据您的心理状态进行匹配歌曲，您的期待值是多少？"></a>如果有一款心理服务APP可以根据您的心理状态进行匹配歌曲，您的期待值是多少？</h1><div id="echarts6173" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6173'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['一般', '非常不期待', '期待', '非常期待']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 1, 1, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [2, 2, 0, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [6, 3, 1, 2]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="请问您平时喜欢看哪种类型的视频来缓解烦恼？"><a href="#请问您平时喜欢看哪种类型的视频来缓解烦恼？" class="headerlink" title="请问您平时喜欢看哪种类型的视频来缓解烦恼？"></a>请问您平时喜欢看哪种类型的视频来缓解烦恼？</h1><div id="echarts2703" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2703'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['搞笑类', '萌宠类', '励志类', '音乐情感类']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 3, 3, 2]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [5, 6, 2, 3]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [8, 9, 5, 5]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="如果有一款心理健康APP可以根据您喜欢的视频类型进行匹配，您的期待值是多少？"><a href="#如果有一款心理健康APP可以根据您喜欢的视频类型进行匹配，您的期待值是多少？" class="headerlink" title="如果有一款心理健康APP可以根据您喜欢的视频类型进行匹配，您的期待值是多少？"></a>如果有一款心理健康APP可以根据您喜欢的视频类型进行匹配，您的期待值是多少？</h1><div id="echarts6839" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6839'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['一般', '不期待', '期待', '非常不期待', '非常期待']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 1, 1, 0, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 2, 0, 2, 1]
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [5, 3, 1, 2, 1]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="如果有一款心理健康APP能为您提供趣味性心理游戏，您的期待是？"><a href="#如果有一款心理健康APP能为您提供趣味性心理游戏，您的期待是？" class="headerlink" title="如果有一款心理健康APP能为您提供趣味性心理游戏，您的期待是？"></a>如果有一款心理健康APP能为您提供趣味性心理游戏，您的期待是？</h1><div id="echarts7319" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts7319'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['不期待', '非常不期待', '一般', '期待', '非常期待']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 2, 1]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 0, 2, 1, 2]
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [2, 1, 5, 2, 2]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="如果有一款心理健康APP能够收听心理电台，您希望电台能够提供哪些方面的文本？"><a href="#如果有一款心理健康APP能够收听心理电台，您希望电台能够提供哪些方面的文本？" class="headerlink" title="如果有一款心理健康APP能够收听心理电台，您希望电台能够提供哪些方面的文本？"></a>如果有一款心理健康APP能够收听心理电台，您希望电台能够提供哪些方面的文本？</h1><div id="echarts4418" style="width: 100%;height: 600px;margin: 0 auto"></div>
+//<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4418'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['著名心理读物类', '励志文学类', '温暖治愈类', '真人真事类']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 2, 3, 3]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [6, 1, 3, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 3, 6, 5]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -3071,7 +5951,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
