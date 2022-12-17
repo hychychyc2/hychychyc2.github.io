@@ -145,6 +145,4369 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/20/look/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="croooony">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="croooony">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/20/look/" class="post-title-link" itemprop="url">调查问卷数据分析</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-10-20 00:00:00" itemprop="dateCreated datePublished" datetime="2022-10-20T00:00:00+08:00">2022-10-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-10-22 21:29:19" itemprop="dateModified" datetime="2022-10-22T21:29:19+08:00">2022-10-22</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <table>
+<thead>
+<tr>
+<th>Team Name</th>
+<th>croooony</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Members</td>
+<td>何宇川</td>
+<td>李睿</td>
+<td>赵怡然</td>
+<td>乔婧</td>
+</tr>
+</tbody></table>
+<h1 id="您的性别"><a href="#您的性别" class="headerlink" title="您的性别"></a>您的性别</h1><div id="echarts7050" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts7050'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'item'
+    },
+    legend: {
+        top: '5%',
+        left: 'center'
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: ['40%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                show: false,
+                position: 'center'
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '40',
+                    fontWeight: 'bold'
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            itemStyle: {
+                normal: {
+                    //饼状图阴影，值越大阴影亮度越高
+                    shadowBlur: 200,
+                    shadowColor: '#FFA07A'
+                }
+            },
+            data: [
+                {value: 6, name: '男'},
+                {value: 6, name: '女'},
+        
+
+            ]
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h1 id="您的年龄段"><a href="#您的年龄段" class="headerlink" title="您的年龄段"></a>您的年龄段</h1><div id="echarts7922" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts7922'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'item'
+    },
+    legend: {
+        top: '5%',
+        left: 'center'
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: ['40%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                show: false,
+                position: 'center'
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '40',
+                    fontWeight: 'bold'
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            itemStyle: {
+                normal: {
+                    //饼状图阴影，值越大阴影亮度越高
+                    shadowBlur: 200,
+                    shadowColor: '#FFA07A'
+                }
+            },
+            data: [
+                {value: 11, name: '18~25'},
+                {value: 1, name: '40以上'},
+        
+            ]
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h1 id="您平时出现焦虑的原因有哪些？"><a href="#您平时出现焦虑的原因有哪些？" class="headerlink" title="您平时出现焦虑的原因有哪些？"></a>您平时出现焦虑的原因有哪些？</h1><div id="echarts8966" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts8966'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['学业/工作问题', '人际关系问题', '个人前途问题', '恋爱问题', '经济问题', '家庭问题', '其他'],
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 3, 5, 6, 2, 2,0]
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [5, 3, 6, 1, 1, 1,0]
+    
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 6, 11, 7, 3, 3,0]
+    
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h1 id="你如何发泄自己的负面情绪，遇到困扰你一般会向谁请教？"><a href="#你如何发泄自己的负面情绪，遇到困扰你一般会向谁请教？" class="headerlink" title="你如何发泄自己的负面情绪，遇到困扰你一般会向谁请教？"></a>你如何发泄自己的负面情绪，遇到困扰你一般会向谁请教？</h1><div id="echarts4950" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4950'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['向父母诉说', '向亲人诉说', '向知心朋友诉说', '向同学/同事诉说', '向男/女朋友诉说', '憋在心里', '做一些运动发泄', '不管']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 2, 5, 3, 3, 3, 3, 1]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [3, 2, 6, 0, 1, 2, 2, 0]
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [7, 4, 11, 3, 4, 5, 5, 1]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h1 id="若你在人际交往方面存在压力，你认为是什么原因造成的呢？"><a href="#若你在人际交往方面存在压力，你认为是什么原因造成的呢？" class="headerlink" title="若你在人际交往方面存在压力，你认为是什么原因造成的呢？"></a>若你在人际交往方面存在压力，你认为是什么原因造成的呢？</h1><div id="echarts3641" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3641'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['没有压力', '担心与同学/同事相处不融洽', '自己性格过于内向', '朋友都太利益，不够纯洁', '与他人的沟通交往存在障碍，缺乏技巧', '其他〖不知道〗']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 4, 3, 2, 2, 0]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [0, 3, 2, 0, 4, 1]
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [3, 7, 5, 2, 6, 1]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+
+<h1 id="您认为现在自己的心理状况如何"><a href="#您认为现在自己的心理状况如何" class="headerlink" title="您认为现在自己的心理状况如何?"></a>您认为现在自己的心理状况如何?</h1><div id="echarts4167" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4167'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['很健康', '比较健康', '其他〖一般〗']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 2, 1]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 5, 0]
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [4, 7, 1]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="你认为可以从下列哪些资源中获得心理方面的帮助？"><a href="#你认为可以从下列哪些资源中获得心理方面的帮助？" class="headerlink" title="你认为可以从下列哪些资源中获得心理方面的帮助？"></a>你认为可以从下列哪些资源中获得心理方面的帮助？</h1><div id="echarts737" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts737'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['不需要心理辅导', '个体咨询', '团体心理辅导', '网上心理咨询', '没有获益', '心理健康教育讲座']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 3, 3, 2, 2, 2]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 3, 1, 3, 0, 3]
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [5, 6, 4, 5, 2, 5]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="在心理健康教育和咨询工作方面，您认为需要加强的是？"><a href="#在心理健康教育和咨询工作方面，您认为需要加强的是？" class="headerlink" title="在心理健康教育和咨询工作方面，您认为需要加强的是？"></a>在心理健康教育和咨询工作方面，您认为需要加强的是？</h1><div id="echarts7101" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts7101'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['不需要加强', '个体咨询团体', '心理辅导', '网上心理咨询', '心理健康教育讲座', '心理测试']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [2, 3, 4, 2, 1, 1]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [0, 4, 4, 3, 2, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [2, 7, 8, 5, 3, 3]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您对去医院进行心理疏导或者心理治疗持一种怎样的态度？"><a href="#您对去医院进行心理疏导或者心理治疗持一种怎样的态度？" class="headerlink" title="您对去医院进行心理疏导或者心理治疗持一种怎样的态度？"></a>您对去医院进行心理疏导或者心理治疗持一种怎样的态度？</h1><div id="echarts9676" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts9676'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['排斥，去医院会带来更大压力，可能会引起别人异样眼光', '中立，更喜欢线上问诊或者其他更保密的形式', '支持，去医院可以更有效的帮助心理问题的解决']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 2, 0]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 4, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [5, 6, 1]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您更愿意选择哪种心理咨询的形式？"><a href="#您更愿意选择哪种心理咨询的形式？" class="headerlink" title="您更愿意选择哪种心理咨询的形式？"></a>您更愿意选择哪种心理咨询的形式？</h1><div id="echarts8801" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts8801'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['电话沟通', '即时通讯软件(微信等)', '医疗机构', '网络视频', '线下茶室、咖啡厅等']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [2, 5, 1, 2, 1]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [3, 4, 2, 1, 4]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [5, 9, 3, 3, 5]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="关于心理咨询、治疗您认为重要的是？"><a href="#关于心理咨询、治疗您认为重要的是？" class="headerlink" title="关于心理咨询、治疗您认为重要的是？"></a>关于心理咨询、治疗您认为重要的是？</h1><div id="echarts6410" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6410'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['保密原则', '就诊方便舒适', '时长合适', '解决现实问题', '效果好', '起效快', '性价比高', '没有副反应', '不会复发']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 4, 2, 2, 3, 1, 1, 0, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [6, 6, 3, 4, 2, 2, 4, 2, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 10, 5, 6, 5, 3, 5, 2, 2]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="心理咨询、治疗相关知识和信息的获取途径："><a href="#心理咨询、治疗相关知识和信息的获取途径：" class="headerlink" title="心理咨询、治疗相关知识和信息的获取途径："></a>心理咨询、治疗相关知识和信息的获取途径：</h1><div id="echarts3188" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3188'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['抖音、小红书等短视频APP推送', '微信、微博推送', '互联网搜索', '专业人士普及', '亲朋好友告知']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 3, 1, 2, 1]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [5, 4, 3, 3, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 7, 4, 5, 3]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="与传统线下心理咨询相比，您认为线上心理咨询有哪些优势？"><a href="#与传统线下心理咨询相比，您认为线上心理咨询有哪些优势？" class="headerlink" title="与传统线下心理咨询相比，您认为线上心理咨询有哪些优势？"></a>与传统线下心理咨询相比，您认为线上心理咨询有哪些优势？</h1><div id="echarts5012" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts5012'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['有效避免自我尴尬', '节约时间', '费用低', '方便']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 4, 3, 3]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [5, 3, 3, 4]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 7, 6, 7]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="与传统线下心理咨询相比，您认为线上心理咨询存在哪些劣势？"><a href="#与传统线下心理咨询相比，您认为线上心理咨询存在哪些劣势？" class="headerlink" title="与传统线下心理咨询相比，您认为线上心理咨询存在哪些劣势？"></a>与传统线下心理咨询相比，您认为线上心理咨询存在哪些劣势？</h1><div id="echarts7872" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts7872'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['担心自身隐私泄露', '技术不够成熟', '自身权益的维护', '作用效果不明显']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [6, 3, 4, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [6, 5, 3, 3]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [12, 8, 7, 3]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您是否希望有一个心理健康类app能够帮助你调节情绪"><a href="#您是否希望有一个心理健康类app能够帮助你调节情绪" class="headerlink" title="您是否希望有一个心理健康类app能够帮助你调节情绪"></a>您是否希望有一个心理健康类app能够帮助你调节情绪</h1><div id="echarts51" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts51'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['无所谓', '需要', '不需要']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 1, 1]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [5, 0, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 1, 2]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您对心理类APP-哪些内容比较感兴趣？"><a href="#您对心理类APP-哪些内容比较感兴趣？" class="headerlink" title="您对心理类APP 哪些内容比较感兴趣？"></a>您对心理类APP 哪些内容比较感兴趣？</h1><div id="echarts6649" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6649'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['线下活动', '趣味测试', '专业测评', '心理知识', '专业咨询', '发泄窗口', '解压游戏', '其他〖不感兴趣〗']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [2, 3, 4, 2, 1, 0, 0, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [2, 4, 4, 3, 3, 2, 2, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [4, 7, 8, 5, 4, 2, 2, 1]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您是否想了解自己一阶段的情绪波动情况"><a href="#您是否想了解自己一阶段的情绪波动情况" class="headerlink" title="您是否想了解自己一阶段的情绪波动情况"></a>您是否想了解自己一阶段的情绪波动情况</h1><div id="echarts2811" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2811'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['否', '是']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 2]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 5]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [5, 7]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="如果在你心情不开心时-x2F-波动时，有一个地方可以让你和陌生人或者线上好友聊天抒发，你会去使用吗"><a href="#如果在你心情不开心时-x2F-波动时，有一个地方可以让你和陌生人或者线上好友聊天抒发，你会去使用吗" class="headerlink" title="如果在你心情不开心时&#x2F;波动时，有一个地方可以让你和陌生人或者线上好友聊天抒发，你会去使用吗"></a>如果在你心情不开心时&#x2F;波动时，有一个地方可以让你和陌生人或者线上好友聊天抒发，你会去使用吗</h1><div id="echarts1615" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts1615'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['会', '不会']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [5, 1]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [4, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 3]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="假如有一个社区平台可以让你匿名发帖并且给他人的帖子评论留言，你会不会加入这个社区"><a href="#假如有一个社区平台可以让你匿名发帖并且给他人的帖子评论留言，你会不会加入这个社区" class="headerlink" title="假如有一个社区平台可以让你匿名发帖并且给他人的帖子评论留言，你会不会加入这个社区"></a>假如有一个社区平台可以让你匿名发帖并且给他人的帖子评论留言，你会不会加入这个社区</h1><div id="echarts1623" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts1623'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['会', '不会']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [5, 1]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [4, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 3]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="在你心情糟糕的时候，你会选择寻求心理咨询的帮助吗"><a href="#在你心情糟糕的时候，你会选择寻求心理咨询的帮助吗" class="headerlink" title="在你心情糟糕的时候，你会选择寻求心理咨询的帮助吗"></a>在你心情糟糕的时候，你会选择寻求心理咨询的帮助吗</h1><div id="echarts8960" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts8960'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['会', '不会']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 3]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [3, 3]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [6, 6]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+<h1 id="假如有一个app可以将你每天的情绪用日记的形式记录下来，你会去使用吗"><a href="#假如有一个app可以将你每天的情绪用日记的形式记录下来，你会去使用吗" class="headerlink" title="假如有一个app可以将你每天的情绪用日记的形式记录下来，你会去使用吗"></a>假如有一个app可以将你每天的情绪用日记的形式记录下来，你会去使用吗</h1><div id="echarts1368" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts1368'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['会', '不会']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 3]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [5, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [8, 4]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="如果有一款心理类app有以下功能，您对哪些功能最感兴趣"><a href="#如果有一款心理类app有以下功能，您对哪些功能最感兴趣" class="headerlink" title="如果有一款心理类app有以下功能，您对哪些功能最感兴趣"></a>如果有一款心理类app有以下功能，您对哪些功能最感兴趣</h1><div id="echarts2697" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2697'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['走进聊天室，热门话题抢先知', '实时心理测试与评价', '专家老师', '1对1心理咨询', '情绪日记DIY', '秘密树洞，匿名社区，畅所欲言', '美文音频个性化推荐服务']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [2, 3, 1, 1, 2, 1, 1]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [4, 3, 2, 2, 4, 5, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [6, 6, 3, 3, 6, 6, 3]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="其他假如让你设计一款心理类APP，你会选择怎样的界面风格是"><a href="#其他假如让你设计一款心理类APP，你会选择怎样的界面风格是" class="headerlink" title="其他假如让你设计一款心理类APP，你会选择怎样的界面风格是"></a>其他假如让你设计一款心理类APP，你会选择怎样的界面风格是</h1><div id="echarts4247" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4247'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['欢快活泼可爱—小公举风', '时尚热情绚丽—时尚大片风', '具有冲击力个性鲜明—艺术潮流风', '简约干净—性冷淡风', '其他']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 2, 1, 2, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [4, 3, 2, 5, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [7, 5, 3, 7, 1]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您认为心理健康类app有哪些不必要的功能？"><a href="#您认为心理健康类app有哪些不必要的功能？" class="headerlink" title="您认为心理健康类app有哪些不必要的功能？"></a>您认为心理健康类app有哪些不必要的功能？</h1><div id="echarts6520" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6520'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['课程直播', '心理测试', '专业课程', '科普文章', '沟通小组', '监视打卡', '倾诉', '线上心理咨询师', '其他', '心理FM']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 1, 1, 2, 2, 2, 1, 1, 0, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [3, 2, 2, 1, 2, 4, 0, 2, 1, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [6, 3, 3, 3, 4, 6, 1, 3, 1, 1]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="市面上心理类APP，不使用的原因？"><a href="#市面上心理类APP，不使用的原因？" class="headerlink" title="市面上心理类APP，不使用的原因？"></a>市面上心理类APP，不使用的原因？</h1><div id="echarts2656" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts2656'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['没有用过，不知道', '不敢在陌生人面前说心里话', '觉得事情不是很严重', '不想花钱，觉得自己可以解决', '觉得心很累，不想理会，不想解决问题']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 3, 2, 2, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [5, 1, 0, 3, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 4, 2, 5, 1]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您希望登录的app的方式是？"><a href="#您希望登录的app的方式是？" class="headerlink" title="您希望登录的app的方式是？"></a>您希望登录的app的方式是？</h1><div id="echarts1992" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts1992'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['微信登录', '手机号登录', '不登录或者匿名登录', 'QQ登录']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 3, 1, 3]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 1, 4, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [5, 4, 5, 4]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="您是否想拥有一处独立私密的个人网络空间，来帮您储存当下的心情与经历，并通过大数据分析来为您推荐适合您的书籍、音乐、电台等？"><a href="#您是否想拥有一处独立私密的个人网络空间，来帮您储存当下的心情与经历，并通过大数据分析来为您推荐适合您的书籍、音乐、电台等？" class="headerlink" title="您是否想拥有一处独立私密的个人网络空间，来帮您储存当下的心情与经历，并通过大数据分析来为您推荐适合您的书籍、音乐、电台等？"></a>您是否想拥有一处独立私密的个人网络空间，来帮您储存当下的心情与经历，并通过大数据分析来为您推荐适合您的书籍、音乐、电台等？</h1><div id="echarts6140" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6140'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['不想拥有', '比较想拥有', '很想拥有']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 3, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 4, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [4, 7, 1]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="对于写信给陌生人分享烦恼或者安抚鼓励，您的看法是？"><a href="#对于写信给陌生人分享烦恼或者安抚鼓励，您的看法是？" class="headerlink" title="对于写信给陌生人分享烦恼或者安抚鼓励，您的看法是？"></a>对于写信给陌生人分享烦恼或者安抚鼓励，您的看法是？</h1><div id="echarts5976" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts5976'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['很新颖，愿意一试', '看情况，', '网上留言就行，手写信就算了', '了解是什么问题']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [2, 2, 1, 1]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [4, 0, 1, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [6, 2, 2, 2]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="在APP提供的资源方面，你更看重哪些？"><a href="#在APP提供的资源方面，你更看重哪些？" class="headerlink" title="在APP提供的资源方面，你更看重哪些？"></a>在APP提供的资源方面，你更看重哪些？</h1><div id="echarts5855" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts5855'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['对时事新闻从心理学角度进行点评', '听觉类心理资讯或知识播报', '很温馨的让我感觉温暖的内容', '很新奇的能引起我的兴趣的内容', '图文并茂的心理资讯或知识呈现', '放松类技巧示范']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [2, 1, 2, 3, 3, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 2, 4, 3, 4, 1]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [3, 3, 6, 6, 7, 1]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="对于心理APP上的资源，你希望它的更新频率如何？"><a href="#对于心理APP上的资源，你希望它的更新频率如何？" class="headerlink" title="对于心理APP上的资源，你希望它的更新频率如何？"></a>对于心理APP上的资源，你希望它的更新频率如何？</h1><div id="echarts4113" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts4113'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['两三天更新一次', '一周更新一次', '每天更新3次以上', '一天更新1-2次']
+
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 1, 1, 1]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [2, 0, 1, 3]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [5, 1, 2, 4]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="如果有一款心理服务APP可以根据您的心理状态进行匹配歌曲，您的期待值是多少？"><a href="#如果有一款心理服务APP可以根据您的心理状态进行匹配歌曲，您的期待值是多少？" class="headerlink" title="如果有一款心理服务APP可以根据您的心理状态进行匹配歌曲，您的期待值是多少？"></a>如果有一款心理服务APP可以根据您的心理状态进行匹配歌曲，您的期待值是多少？</h1><div id="echarts5402" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts5402'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['一般', '非常不期待', '期待', '非常期待']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 1, 1, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [2, 2, 0, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [6, 3, 1, 2]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="请问您平时喜欢看哪种类型的视频来缓解烦恼？"><a href="#请问您平时喜欢看哪种类型的视频来缓解烦恼？" class="headerlink" title="请问您平时喜欢看哪种类型的视频来缓解烦恼？"></a>请问您平时喜欢看哪种类型的视频来缓解烦恼？</h1><div id="echarts5369" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts5369'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['搞笑类', '萌宠类', '励志类', '音乐情感类']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 3, 3, 2]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [5, 6, 2, 3]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [8, 9, 5, 5]
+
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="如果有一款心理健康APP可以根据您喜欢的视频类型进行匹配，您的期待值是多少？"><a href="#如果有一款心理健康APP可以根据您喜欢的视频类型进行匹配，您的期待值是多少？" class="headerlink" title="如果有一款心理健康APP可以根据您喜欢的视频类型进行匹配，您的期待值是多少？"></a>如果有一款心理健康APP可以根据您喜欢的视频类型进行匹配，您的期待值是多少？</h1><div id="echarts7519" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts7519'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['一般', '不期待', '期待', '非常不期待', '非常期待']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [4, 1, 1, 0, 0]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 2, 0, 2, 1]
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [5, 3, 1, 2, 1]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="如果有一款心理健康APP能为您提供趣味性心理游戏，您的期待是？"><a href="#如果有一款心理健康APP能为您提供趣味性心理游戏，您的期待是？" class="headerlink" title="如果有一款心理健康APP能为您提供趣味性心理游戏，您的期待是？"></a>如果有一款心理健康APP能为您提供趣味性心理游戏，您的期待是？</h1><div id="echarts5489" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts5489'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['不期待', '非常不期待', '一般', '期待', '非常期待']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 2, 1]
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [1, 0, 2, 1, 2]
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [2, 1, 5, 2, 2]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+<h1 id="如果有一款心理健康APP能够收听心理电台，您希望电台能够提供哪些方面的文本？"><a href="#如果有一款心理健康APP能够收听心理电台，您希望电台能够提供哪些方面的文本？" class="headerlink" title="如果有一款心理健康APP能够收听心理电台，您希望电台能够提供哪些方面的文本？"></a>如果有一款心理健康APP能够收听心理电台，您希望电台能够提供哪些方面的文本？</h1><div id="echarts9247" style="width: 100%;height: 600px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+
+
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts9247'));
+        // 指定图表的配置项和数据
+        var option = option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data: ['男', '女', 'tot']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['著名心理读物类', '励志文学类', '温暖治愈类', '真人真事类']
+,
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '人数',
+            min: 0,
+            max: 12,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }
+    ],
+    series: [
+        {
+            name: '男',
+            type: 'bar',
+            data: [3, 2, 3, 3]
+
+
+
+        },
+        {
+            name: '女',
+            type: 'bar',
+            data: [6, 1, 3, 2]
+
+
+
+        },
+        {
+            name: 'tot',
+            type: 'bar',
+            data: [9, 3, 6, 5]
+
+
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="croooony">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="croooony">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/10/14/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C%E7%BB%9F%E8%AE%A1/" class="post-title-link" itemprop="url">调查问卷结果统计</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-10-14 00:00:00 / Modified: 18:53:53" itemprop="dateCreated datePublished" datetime="2022-10-14T00:00:00+08:00">2022-10-14</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="来自crony的调查问卷"><a href="#来自crony的调查问卷" class="headerlink" title="来自crony的调查问卷"></a><strong>来自crony的调查问卷</strong></h1><p>1.您的性别  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>男</td>
+<td>6</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image004.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>女</td>
+<td>6</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image004.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>2.您的年龄段  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>18岁以下</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>18~25</td>
+<td>11</td>
+<td><img src="/01/clip_image008.gif" alt="img"><img src="/01/clip_image010.gif" alt="img">91.67%</td>
+</tr>
+<tr>
+<td>26~30</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>30~40</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>40以上</td>
+<td>1</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image014.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>3.您平时出现焦虑的原因有哪些？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>学业&#x2F;工作问题</td>
+<td>9</td>
+<td><img src="/01/clip_image016.gif" alt="img"><img src="/01/clip_image018.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>人际关系问题</td>
+<td>6</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image019.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>个人前途问题</td>
+<td>11</td>
+<td><img src="/01/clip_image008.gif" alt="img"><img src="/01/clip_image010.gif" alt="img">91.67%</td>
+</tr>
+<tr>
+<td>恋爱问题</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image023.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>经济问题</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>家庭问题</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>4.你如何发泄自己的负面情绪，遇到困扰你一般会向谁请教？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>向父母诉说</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image023.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>向亲人诉说</td>
+<td>4</td>
+<td><img src="/01/clip_image029.gif" alt="img"><img src="/01/clip_image031.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>向知心朋友诉说</td>
+<td>11</td>
+<td><img src="/01/clip_image008.gif" alt="img"><img src="/01/clip_image010.gif" alt="img">91.67%</td>
+</tr>
+<tr>
+<td>向同学&#x2F;同事诉说</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>向男&#x2F;女朋友诉说</td>
+<td>4</td>
+<td><img src="/01/clip_image029.gif" alt="img"><img src="/01/clip_image031.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>憋在心里</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>做一些运动发泄</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>不管</td>
+<td>1</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image014.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>5.若你在人际交往方面存在压力，你认为是什么原因造成的呢？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>担心与同学&#x2F;同事相处不融洽</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image023.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>与他人的沟通交往存在障碍，缺乏技巧</td>
+<td>6</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image004.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>自己性格过于内向</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>朋友都太利益，不够纯洁</td>
+<td>2</td>
+<td><img src="/01/clip_image037.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>没有压力</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>1</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image014.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>6.您认为现在自己的心理状况如何?  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>很健康</td>
+<td>4</td>
+<td><img src="/01/clip_image029.gif" alt="img"><img src="/01/clip_image031.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>比较健康</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image023.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>不健康</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>1</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image014.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>7.你认为可以从下列哪些资源中获得心理方面的帮助？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>个体咨询</td>
+<td>6</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image019.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>团体心理辅导</td>
+<td>4</td>
+<td><img src="/01/clip_image029.gif" alt="img"><img src="/01/clip_image031.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>心理健康教育讲座</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>网上心理咨询</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>没有获益</td>
+<td>2</td>
+<td><img src="/01/clip_image037.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>不需要心理辅导</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>8.在心理健康教育和咨询工作方面，您认为需要加强的是？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>个体咨询团体</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image023.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>心理辅导</td>
+<td>8</td>
+<td><img src="/01/clip_image041.gif" alt="img"><img src="/01/clip_image043.gif" alt="img">66.67%</td>
+</tr>
+<tr>
+<td>心理健康教育讲座</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>网上心理咨询</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>心理测试</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>不需要加强</td>
+<td>2</td>
+<td><img src="/01/clip_image037.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image006.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>9.您对去医院进行心理疏导或者心理治疗持一种怎样的态度？  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>排斥，去医院会带来更大压力，可能会引起别人异样眼光</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>支持，去医院可以更有效的帮助心理问题的解决</td>
+<td>1</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image014.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>中立，更喜欢线上问诊或者其他更保密的形式</td>
+<td>6</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image004.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>10.您更愿意选择哪种心理咨询的形式？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>电话沟通</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>即时通讯软件(微信等)</td>
+<td>9</td>
+<td><img src="/01/clip_image016.gif" alt="img"><img src="/01/clip_image018.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>医疗机构</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>网络视频</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>线下茶室、咖啡厅等</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>11.关于心理咨询、治疗您认为重要的是？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>保密原则</td>
+<td>9</td>
+<td><img src="/01/clip_image016.gif" alt="img"><img src="/01/clip_image044.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>就诊方便舒适</td>
+<td>10</td>
+<td><img src="/01/clip_image046.gif" alt="img"><img src="/01/clip_image048.gif" alt="img">83.33%</td>
+</tr>
+<tr>
+<td>时长合适</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>解决现实问题</td>
+<td>6</td>
+<td><img src="/01/clip_image002.gif" alt="img"><img src="/01/clip_image019.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>效果好</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>起效快</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>没有副反应</td>
+<td>2</td>
+<td><img src="/01/clip_image049.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>不会复发</td>
+<td>2</td>
+<td><img src="/01/clip_image049.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>性价比高</td>
+<td>5</td>
+<td><img src="/01/clip_image033.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image050.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>12.心理咨询、治疗相关知识和信息的获取途径：  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>微信、微博推送</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image051.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>抖音、小红书等短视频APP推送</td>
+<td>9</td>
+<td><img src="/01/clip_image016.gif" alt="img"><img src="/01/clip_image052.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>专业人士普及</td>
+<td>5</td>
+<td><img src="/01/clip_image053.gif" alt="img"><img src="/01/clip_image035.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>互联网搜索</td>
+<td>4</td>
+<td><img src="/01/clip_image029.gif" alt="img"><img src="/01/clip_image054.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>亲朋好友告知</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image027.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image050.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>13.与传统线下心理咨询相比，您认为线上心理咨询有哪些优势？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>方便</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image051.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>节约时间</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image051.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>有效避免自我尴尬</td>
+<td>9</td>
+<td><img src="/01/clip_image055.gif" alt="img"><img src="/01/clip_image052.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>费用低</td>
+<td>6</td>
+<td><img src="/01/clip_image056.gif" alt="img"><img src="/01/clip_image057.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image050.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>14.与传统线下心理咨询相比，您认为线上心理咨询存在哪些劣势？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>技术不够成熟</td>
+<td>8</td>
+<td><img src="/01/clip_image058.gif" alt="img"><img src="/01/clip_image059.gif" alt="img">66.67%</td>
+</tr>
+<tr>
+<td>作用效果不明显</td>
+<td>3</td>
+<td><img src="/01/clip_image025.gif" alt="img"><img src="/01/clip_image060.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>担心自身隐私泄露</td>
+<td>12</td>
+<td><img src="/01/clip_image062.gif" alt="img">100%</td>
+</tr>
+<tr>
+<td>自身权益的维护</td>
+<td>7</td>
+<td><img src="/01/clip_image021.gif" alt="img"><img src="/01/clip_image051.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image050.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>15.您是否希望有一个心理健康类app能够帮助你调节情绪  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>不需要</td>
+<td>2</td>
+<td><img src="/01/clip_image063.gif" alt="img"><img src="/01/clip_image039.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>无所谓</td>
+<td>9</td>
+<td><img src="/01/clip_image064.gif" alt="img"><img src="/01/clip_image052.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>需要</td>
+<td>1</td>
+<td><img src="/01/clip_image012.gif" alt="img"><img src="/01/clip_image065.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>特别需要</td>
+<td>0</td>
+<td><img src="/01/clip_image050.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>16.您对心理类APP 哪些内容比较感兴趣？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>线下活动</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>趣味测试</td>
+<td>7</td>
+<td><img src="/01/clip_image068.gif" alt="img"><img src="/01/clip_image069.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>专业测评</td>
+<td>8</td>
+<td><img src="/01/clip_image070.gif" alt="img"><img src="/01/clip_image071.gif" alt="img">66.67%</td>
+</tr>
+<tr>
+<td>心理知识</td>
+<td>5</td>
+<td><img src="/01/clip_image072.gif" alt="img"><img src="/01/clip_image073.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>专业咨询</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>发泄窗口</td>
+<td>2</td>
+<td><img src="/01/clip_image074.gif" alt="img"><img src="/01/clip_image075.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>解压游戏</td>
+<td>2</td>
+<td><img src="/01/clip_image074.gif" alt="img"><img src="/01/clip_image075.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image077.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>17.您是否想了解自己一阶段的情绪波动情况  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>是</td>
+<td>7</td>
+<td><img src="/01/clip_image078.gif" alt="img"><img src="/01/clip_image069.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>否</td>
+<td>5</td>
+<td><img src="/01/clip_image072.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>18.如果在你心情不开心时&#x2F;波动时，有一个地方可以让你和陌生人或者线上好友聊天抒发，你会去使用吗  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>会</td>
+<td>9</td>
+<td><img src="/01/clip_image080.gif" alt="img"><img src="/01/clip_image081.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>不会</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image083.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>19.假如有一个社区平台可以让你匿名发帖并且给他人的帖子评论留言，你会不会加入这个社区  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>会</td>
+<td>9</td>
+<td><img src="/01/clip_image080.gif" alt="img"><img src="/01/clip_image081.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>不会</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image083.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>20.在你心情糟糕的时候，你会选择寻求心理咨询的帮助吗  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>会</td>
+<td>6</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>不会</td>
+<td>6</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>21.假如有一个app可以将你每天的情绪用日记的形式记录下来，你会去使用吗  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>会</td>
+<td>8</td>
+<td><img src="/01/clip_image070.gif" alt="img"><img src="/01/clip_image071.gif" alt="img">66.67%</td>
+</tr>
+<tr>
+<td>不会</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>22.如果有一款心理类app有以下功能，您对哪些功能最感兴趣  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>实时心理测试与评价</td>
+<td>6</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>走进聊天室，热门话题抢先知</td>
+<td>6</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>秘密树洞，匿名社区，畅所欲言</td>
+<td>6</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>专家老师</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>1对1心理咨询</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image083.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>情绪日记DIY</td>
+<td>6</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image085.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>美文音频个性化推荐服务</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image083.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>23.其他假如让你设计一款心理类APP，你会选择怎样的界面风格是  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>欢快活泼可爱—小公举风</td>
+<td>7</td>
+<td><img src="/01/clip_image078.gif" alt="img"><img src="/01/clip_image069.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>简约干净—性冷淡风</td>
+<td>7</td>
+<td><img src="/01/clip_image078.gif" alt="img"><img src="/01/clip_image069.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>时尚热情绚丽—时尚大片风</td>
+<td>5</td>
+<td><img src="/01/clip_image072.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>具有冲击力个性鲜明—艺术潮流风</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image087.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>24.您认为心理健康类app有哪些不必要的功能？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>线上心理咨询师</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>倾诉</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image087.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>心理测试</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>沟通小组</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>专业课程</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>课程直播</td>
+<td>6</td>
+<td><img src="/01/clip_image084.gif" alt="img"><img src="/01/clip_image088.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>科普文章</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>心理FM</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image077.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>监视打卡</td>
+<td>6</td>
+<td><img src="/01/clip_image089.gif" alt="img"><img src="/01/clip_image090.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image087.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>25.市面上心理类APP，不使用的原因？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>没有用过，不知道</td>
+<td>9</td>
+<td><img src="/01/clip_image080.gif" alt="img"><img src="/01/clip_image091.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>不想花钱，觉得自己可以解决</td>
+<td>5</td>
+<td><img src="/01/clip_image092.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>不敢在陌生人面前说心里话</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>觉得事情不是很严重</td>
+<td>2</td>
+<td><img src="/01/clip_image093.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>觉得心很累，不想理会，不想解决问题</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>26.您希望登录的app的方式是？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>QQ登录</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image096.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>微信登录</td>
+<td>5</td>
+<td><img src="/01/clip_image092.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>微博登录</td>
+<td>0</td>
+<td><img src="/01/clip_image097.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>手机号登录</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image067.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>不登录或者匿名登录</td>
+<td>5</td>
+<td><img src="/01/clip_image092.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>27.您是否想拥有一处独立私密的个人网络空间，来帮您储存当下的心情与经历，并通过大数据分析来为您推荐适合您的书籍、音乐、电台等？  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>不想拥有</td>
+<td>4</td>
+<td><img src="/01/clip_image066.gif" alt="img"><img src="/01/clip_image096.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>比较想拥有</td>
+<td>7</td>
+<td><img src="/01/clip_image078.gif" alt="img"><img src="/01/clip_image098.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>很想拥有</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>28.对于写信给陌生人分享烦恼或者安抚鼓励，您的看法是？  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>很新颖，愿意一试</td>
+<td>6</td>
+<td><img src="/01/clip_image089.gif" alt="img"><img src="/01/clip_image099.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>看情况，</td>
+<td>2</td>
+<td><img src="/01/clip_image093.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>了解是什么问题</td>
+<td>2</td>
+<td><img src="/01/clip_image093.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>网上留言就行，手写信就算了</td>
+<td>2</td>
+<td><img src="/01/clip_image093.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>29.在APP提供的资源方面，你更看重哪些？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>对时事新闻从心理学角度进行点评</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image100.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>听觉类心理资讯或知识播报</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image086.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>图文并茂的心理资讯或知识呈现</td>
+<td>7</td>
+<td><img src="/01/clip_image078.gif" alt="img"><img src="/01/clip_image098.gif" alt="img">58.33%</td>
+</tr>
+<tr>
+<td>很温馨的让我感觉温暖的内容</td>
+<td>6</td>
+<td><img src="/01/clip_image089.gif" alt="img"><img src="/01/clip_image099.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>很新奇的能引起我的兴趣的内容</td>
+<td>6</td>
+<td><img src="/01/clip_image089.gif" alt="img"><img src="/01/clip_image099.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>放松类技巧示范</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>其它</td>
+<td>0</td>
+<td><img src="/01/clip_image101.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>30.对于心理APP上的资源，你希望它的更新频率如何？  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>每天更新3次以上</td>
+<td>2</td>
+<td><img src="/01/clip_image102.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>一天更新1-2次</td>
+<td>4</td>
+<td><img src="/01/clip_image103.gif" alt="img"><img src="/01/clip_image104.gif" alt="img">33.33%</td>
+</tr>
+<tr>
+<td>两三天更新一次</td>
+<td>5</td>
+<td><img src="/01/clip_image105.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>一周更新一次</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>其它</td>
+<td>0</td>
+<td><img src="/01/clip_image101.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>31.如果有一款心理服务APP可以根据您的心理状态进行匹配歌曲，您的期待值是多少？  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>非常不期待</td>
+<td>3</td>
+<td><img src="/01/clip_image082.gif" alt="img"><img src="/01/clip_image100.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>不期待</td>
+<td>0</td>
+<td><img src="/01/clip_image097.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>一般</td>
+<td>6</td>
+<td><img src="/01/clip_image106.gif" alt="img"><img src="/01/clip_image107.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>期待</td>
+<td>1</td>
+<td><img src="/01/clip_image076.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>非常期待</td>
+<td>2</td>
+<td><img src="/01/clip_image102.gif" alt="img"><img src="/01/clip_image094.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>32.请问您平时喜欢看哪种类型的视频来缓解烦恼？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>搞笑类</td>
+<td>8</td>
+<td><img src="/01/clip_image108.gif" alt="img"><img src="/01/clip_image109.gif" alt="img">66.67%</td>
+</tr>
+<tr>
+<td>励志类</td>
+<td>5</td>
+<td><img src="/01/clip_image105.gif" alt="img"><img src="/01/clip_image079.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>萌宠类</td>
+<td>9</td>
+<td><img src="/01/clip_image110.gif" alt="img"><img src="/01/clip_image111.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>音乐情感类</td>
+<td>5</td>
+<td><img src="/01/clip_image112.gif" alt="img"><img src="/01/clip_image113.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image097.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>33.如果有一款心理健康APP可以根据您喜欢的视频类型进行匹配，您的期待值是多少？  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>非常不期待</td>
+<td>2</td>
+<td><img src="/01/clip_image114.gif" alt="img"><img src="/01/clip_image115.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>不期待</td>
+<td>3</td>
+<td><img src="/01/clip_image116.gif" alt="img"><img src="/01/clip_image117.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>一般</td>
+<td>5</td>
+<td><img src="/01/clip_image112.gif" alt="img"><img src="/01/clip_image113.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>期待</td>
+<td>1</td>
+<td><img src="/01/clip_image118.gif" alt="img"><img src="/01/clip_image119.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>非常期待</td>
+<td>1</td>
+<td><img src="/01/clip_image118.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>34.如果有一款心理健康APP能为您提供趣味性心理游戏，您的期待是？  [单选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>非常不期待</td>
+<td>1</td>
+<td><img src="/01/clip_image118.gif" alt="img"><img src="/01/clip_image095.gif" alt="img">8.33%</td>
+</tr>
+<tr>
+<td>不期待</td>
+<td>2</td>
+<td><img src="/01/clip_image114.gif" alt="img"><img src="/01/clip_image115.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>一般</td>
+<td>5</td>
+<td><img src="/01/clip_image112.gif" alt="img"><img src="/01/clip_image113.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>期待</td>
+<td>2</td>
+<td><img src="/01/clip_image114.gif" alt="img"><img src="/01/clip_image120.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>非常期待</td>
+<td>2</td>
+<td><img src="/01/clip_image114.gif" alt="img"><img src="/01/clip_image115.gif" alt="img">16.67%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>35.如果有一款心理健康APP能够收听心理电台，您希望电台能够提供哪些方面的文本？  [多选题]</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>小计</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>真人真事类</td>
+<td>5</td>
+<td><img src="/01/clip_image121.gif" alt="img"><img src="/01/clip_image113.gif" alt="img">41.67%</td>
+</tr>
+<tr>
+<td>著名心理读物类</td>
+<td>9</td>
+<td><img src="/01/clip_image110.gif" alt="img"><img src="/01/clip_image111.gif" alt="img">75%</td>
+</tr>
+<tr>
+<td>励志文学类</td>
+<td>3</td>
+<td><img src="/01/clip_image116.gif" alt="img"><img src="/01/clip_image117.gif" alt="img">25%</td>
+</tr>
+<tr>
+<td>温暖治愈类</td>
+<td>6</td>
+<td><img src="/01/clip_image122.gif" alt="img"><img src="/01/clip_image123.gif" alt="img">50%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0</td>
+<td><img src="/01/clip_image097.gif" alt="img">0%</td>
+</tr>
+<tr>
+<td>本题有效填写人次</td>
+<td>12</td>
+<td></td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/13/%E8%AE%BF%E8%B0%88%E8%AE%B0%E5%BD%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1596,7 +5959,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
